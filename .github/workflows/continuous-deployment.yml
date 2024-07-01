@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4.1.2
+        uses: actions/checkout@v4.1.7
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@v3.0.0
@@ -34,7 +34,7 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4.1.2
+        uses: actions/checkout@v4.1.7
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@v3.0.0
@@ -59,7 +59,7 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4.1.2
+        uses: actions/checkout@v4.1.7
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@v3.0.0
@@ -105,7 +105,7 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4.1.2
+        uses: actions/checkout@v4.1.7
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@v3.0.0
@@ -131,7 +131,7 @@ jobs:
 
     steps:
       - name: Checkout release branch
-        uses: actions/checkout@v4.1.2
+        uses: actions/checkout@v4.1.7
 
       - name: "Restore build artifact: Storybook"
         uses: actions/download-artifact@v4.1.4
@@ -152,7 +152,7 @@ jobs:
 
     steps:
       - name: Checkout release branch
-        uses: actions/checkout@v4.1.2
+        uses: actions/checkout@v4.1.7
         with:
           token: ${{ secrets.GH_TOKEN }}
 
