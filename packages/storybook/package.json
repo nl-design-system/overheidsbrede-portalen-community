@@ -25,7 +25,7 @@
     "@example/font": "workspace:*",
     "@example/web-components-react": "workspace:*",
     "@example/web-components-stencil": "workspace:*",
-    "@storybook/addon-a11y": "8.0.9",
+    "@storybook/addon-a11y": "8.2.6",
     "@storybook/addon-actions": "8.0.9",
     "@storybook/addon-docs": "8.0.9",
     "@storybook/addon-interactions": "8.0.9",
