@@ -8,8 +8,6 @@ updates:
     schedule:
       day: "monday"
       interval: "monthly"
-      time: "09:00"
-      timezone: "Europe/Amsterdam"
     reviewers:
       - "nl-design-system/kernteam-dependabot"
   - package-ecosystem: "npm"
@@ -17,8 +15,11 @@ updates:
     schedule:
       day: "monday"
       interval: "monthly"
-      time: "09:00"
-      timezone: "Europe/Amsterdam"
+    groups:
+      storybook:
+        patterns:
+          - "storybook"
+          - "@storybook/*"
     versioning-strategy: "increase-if-necessary"
     open-pull-requests-limit: 20
     reviewers:

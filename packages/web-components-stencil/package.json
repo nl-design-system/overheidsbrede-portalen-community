@@ -20,7 +20,8 @@
   ],
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:nl-design-system/services.git",
+    "directory": "packages/web-components-stencil"
   },
   "scripts": {
     "build": "npm-run-all clean build:**",
