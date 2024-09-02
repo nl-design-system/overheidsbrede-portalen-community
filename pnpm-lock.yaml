@@ -90,6 +90,9 @@ importers:
 
   packages/storybook:
     devDependencies:
+      '@gemeente-denhaag/design-tokens-components':
+        specifier: 0.2.3-alpha.408
+        version: 0.2.3-alpha.408
       '@nl-design-system-unstable/voorbeeld-design-tokens':
         specifier: 1.0.0-alpha.151
         version: 1.0.0-alpha.151
@@ -1281,6 +1284,9 @@ packages:
   '@eslint/js@8.57.0':
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.408':
+    resolution: {integrity: sha512-wRflvVGEju4H+QBwProL/HILjSLfxOtJlFjXI6CFTpH5UlfNLc76pBE3UaihSUz5/GHLIYxHwEM92vaqipHYZQ==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -7640,6 +7646,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.0': {}
+
+  '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.408': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:

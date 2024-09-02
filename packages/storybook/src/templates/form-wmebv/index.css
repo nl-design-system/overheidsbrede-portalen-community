@@ -1,3 +1,16 @@
-:root {
+.voorbeeld-theme {
   --utrecht-space-around: 1;
+
+  /* Component spacing tokens */
+  --utrecht-heading-1-margin-block-start: 0;
+  --utrecht-heading-1-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-2-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-3-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-paragraph-margin-block-end: var(--voorbeeld-space-block-rabbit);
+}
+
+.voorbeeld-back-link {
+  align-items: center;
+  column-gap: 8px;
+  display: inline-flex;
 }
