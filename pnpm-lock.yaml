@@ -135,10 +135,10 @@ importers:
       '@utrecht/icon':
         specifier: 1.1.0
         version: 1.1.0
-      '@vng/assets':
+      '@vng.nl/assets':
         specifier: workspace:*
         version: link:../../proprietary/assets
-      '@vng/design-tokens':
+      '@vng.nl/design-tokens':
         specifier: workspace:*
         version: link:../../proprietary/design-tokens
       react:

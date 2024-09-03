@@ -3,7 +3,7 @@
   "author": "Community for NL Design System",
   "description": "Storybook based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@vng/storybook",
+  "name": "@vng.nl/storybook",
   "keywords": [
     "nl-design-system"
   ],
@@ -35,8 +35,8 @@
     "@types/react-dom": "18.3.0",
     "@utrecht/component-library-react": "5.0.0",
     "@utrecht/icon": "1.1.0",
-    "@vng/assets": "workspace:*",
-    "@vng/design-tokens": "workspace:*",
+    "@vng.nl/assets": "workspace:*",
+    "@vng.nl/design-tokens": "workspace:*",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "rimraf": "6.0.1",
