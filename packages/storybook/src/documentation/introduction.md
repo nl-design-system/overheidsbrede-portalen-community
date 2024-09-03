@@ -9,4 +9,4 @@ Met behulp van de templates, designs en documentatie in de VNG services storyboo
 
 NL Design System is een project dat specialisten van verschillende overheidsorganisaties laat samenwerken aan concrete oplossingen voor websites en applicaties. Denk bijvoorbeeld aan code, ontwerp en richtlijnen.
 
-<http://github.com/nl-design-system>
+Website: [nldesignsystem.nl](https://nldesignsystem.nl/)
