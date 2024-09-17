@@ -76,17 +76,17 @@ jobs:
 
       - name: "Continuous Integration: build"
         env:
-          BASE_URL: "/services/"
+          BASE_URL: "/overheidsbrede-portalen-community/"
         run: pnpm run --if-present build
 
       - name: "Continuous Integration: lint build"
         env:
-          BASE_URL: "/services/"
+          BASE_URL: "/overheidsbrede-portalen-community/"
         run: pnpm run --if-present lint-build
 
       - name: "Continuous Integration: test build"
         env:
-          BASE_URL: "/services/"
+          BASE_URL: "/overheidsbrede-portalen-community/"
         run: pnpm run --if-present test-build
 
       - name: Upload artifact for GitHub Pages
