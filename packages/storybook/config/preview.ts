@@ -4,7 +4,12 @@ import type { Preview } from '@storybook/react';
 const preview: Preview = {
   parameters: {
     controls: { expanded: false },
-    options: { panelPosition: 'right' },
+    options: {
+      panelPosition: 'right',
+      storySort: {
+        order: ['VNG', 'Templates'],
+      },
+    },
   },
 };
 
