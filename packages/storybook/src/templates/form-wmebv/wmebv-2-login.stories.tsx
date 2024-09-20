@@ -15,7 +15,7 @@ import {
 import { Layout } from './components/Layout';
 
 const meta = {
-  title: 'Templates/WMEBV/2 - Login',
+  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/2 - Login',
   id: 'wmebv-2-intro',
   parameters: {
     layout: 'fullscreen',
