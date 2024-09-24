@@ -7,16 +7,18 @@ import {
   PageFooter,
   PageHeader,
 } from '@utrecht/component-library-react/dist/css-module';
-import { HTMLAttributes, PropsWithChildren } from 'react';
+import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 import { Logo, PageHeaderLogo } from './Logo';
 
-export const Layout = ({ children, className, ...props }: PropsWithChildren<HTMLAttributes<HTMLDivElement>>) => {
+interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> {
+  logo?: ReactElement;
+}
+
+export const Layout = ({ logo, children, className, ...props }: LayoutProps) => {
   return (
     <div className={`utrecht-document ${className}`} {...props}>
       <PageHeader className="voorbeeld-page-header">
-        <div className="todo-page-header__content">
-          <PageHeaderLogo />
-        </div>
+        <div className="todo-page-header__content">{logo || <PageHeaderLogo />}</div>
       </PageHeader>
       <PageContent className="todo-page-content">
         <main className={'utrecht-page-content__main'}>{children}</main>
@@ -24,9 +26,7 @@ export const Layout = ({ children, className, ...props }: PropsWithChildren<HTML
       <PageFooter>
         <div className="todo-page-footer__content">
           <div className="todo-footer-content-group">
-            <div className="todo-footer-content-block">
-              <Logo />
-            </div>
+            <div className="todo-footer-content-block">{logo || <Logo />}</div>
             <div className="todo-footer-content-block">
               <Heading2>Contact</Heading2>
               <address className="todo-address utrecht-paragraph">

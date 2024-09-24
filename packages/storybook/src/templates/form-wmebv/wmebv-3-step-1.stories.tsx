@@ -3,6 +3,7 @@ import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
 import { IconArrowLeft } from '@tabler/icons-react';
+import { FormField, LinkButton } from '@utrecht/component-library-react';
 import {
   Button,
   ButtonGroup,
@@ -10,15 +11,16 @@ import {
   Heading2,
   Icon,
   Link,
-  Paragraph,
+  PreHeading,
+  Textarea,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from './components/Layout';
 import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
 
 const meta = {
-  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/2 - Login',
-  id: 'wmebv-2-intro',
+  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/3 - Stap 1',
+  id: 'wmebv-3-step-1',
   parameters: {
     layout: 'fullscreen',
   },
@@ -38,14 +40,21 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
         Terug
       </Link>
       <Heading1>Vraag aan de gemeente</Heading1>
-      <Heading2>Inloggen</Heading2>
-      <Paragraph>
-        Dankzij uw DigiD kunt u overal makkelijk en veilig inloggen. Uw persoonlijke gegevens blijven goed beschermd.
-        Wanneer u inlogt worden uw persoonlijke gegevens automatisch ingevuld.
-      </Paragraph>
-      <ButtonGroup>
-        <Button>Inloggen</Button>
-        <Button>Verder gaan zonder inloggen</Button>
+      <PreHeading>Stap 1 van 4</PreHeading>
+      <Heading2>Uw vraag</Heading2>
+      <FormField label="Stel uw vraag">
+        <Textarea />
+      </FormField>
+      <ButtonGroup direction="column">
+        <Button type="submit" className="voorbeeld-button-spacing" appearance="primary-action-button">
+          Volgende stap
+        </Button>
+        <LinkButton inline className="voorbeeld-button-link">
+          Opslaan en later verder
+        </LinkButton>
+        <LinkButton inline className="voorbeeld-button-link">
+          Stoppen met formulier
+        </LinkButton>
       </ButtonGroup>
     </Layout>
   </>
