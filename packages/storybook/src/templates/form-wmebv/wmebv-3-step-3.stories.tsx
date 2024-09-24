@@ -3,22 +3,14 @@ import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
 import { IconArrowLeft } from '@tabler/icons-react';
-import {
-  Button,
-  ButtonGroup,
-  Heading1,
-  Heading2,
-  Icon,
-  Link,
-  Paragraph,
-} from '@utrecht/component-library-react/dist/css-module';
+import { Heading1, Heading2, Icon, Link, PreHeading } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from './components/Layout';
 import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
 
 const meta = {
-  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/2 - Login',
-  id: 'wmebv-2-intro',
+  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/5 - Stap 3',
+  id: 'wmebv-3-step-3',
   parameters: {
     layout: 'fullscreen',
   },
@@ -38,15 +30,8 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
         Terug
       </Link>
       <Heading1>Vraag aan de gemeente</Heading1>
-      <Heading2>Inloggen</Heading2>
-      <Paragraph>
-        Dankzij uw DigiD kunt u overal makkelijk en veilig inloggen. Uw persoonlijke gegevens blijven goed beschermd.
-        Wanneer u inlogt worden uw persoonlijke gegevens automatisch ingevuld.
-      </Paragraph>
-      <ButtonGroup>
-        <Button>Inloggen</Button>
-        <Button>Verder gaan zonder inloggen</Button>
-      </ButtonGroup>
+      <PreHeading>Stap 3 van 4</PreHeading>
+      <Heading2>Controleer uw gegevens</Heading2>
     </Layout>
   </>
 );

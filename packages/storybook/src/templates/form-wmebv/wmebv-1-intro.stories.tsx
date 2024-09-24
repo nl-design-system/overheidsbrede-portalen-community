@@ -12,7 +12,9 @@ import {
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
+import { ReactElement } from 'react';
 import { Layout } from './components/Layout';
+import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
 
 const meta = {
   title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/1 - Intro',
@@ -26,8 +28,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const TemplatePage = ({ theme }: { theme: string }) => (
-  <Layout className={theme}>
+const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) => (
+  <Layout logo={logo} className={theme}>
     <Link href="/#" className="voorbeeld-back-link">
       <Icon>
         <IconArrowLeft />
@@ -52,9 +54,9 @@ const TemplatePage = ({ theme }: { theme: string }) => (
 );
 
 export const Default: Story = {
-  render: () => <TemplatePage theme={'voorbeeld-theme'} />,
+  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} />,
 };
 
 export const DenHaagTheme: Story = {
-  render: () => <TemplatePage theme={'denhaag-theme'} />,
+  render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
 };
