@@ -7,7 +7,7 @@ const preview: Preview = {
     options: {
       panelPosition: 'right',
       storySort: {
-        order: ['VNG', 'Templates'],
+        order: ['Overheidsbrede Portalen', 'Templates'],
       },
     },
   },
