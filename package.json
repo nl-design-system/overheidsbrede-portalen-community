@@ -23,7 +23,7 @@
   "devDependencies": {
     "@lerna-lite/cli": "3.9.0",
     "@lerna-lite/publish": "3.9.0",
-    "@lerna-lite/run": "3.9.0",
+    "@lerna-lite/run": "3.9.2",
     "@lerna-lite/version": "3.9.0",
     "@types/node": "22.5.2",
     "@typescript-eslint/eslint-plugin": "8.3.0",
