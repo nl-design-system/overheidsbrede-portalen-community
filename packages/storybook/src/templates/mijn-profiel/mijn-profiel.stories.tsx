@@ -6,6 +6,7 @@ import './index.css';
 import {
   IconArchive,
   IconBuildingCommunity,
+  IconChevronDown,
   IconChevronRight,
   IconCurrencyEuro,
   IconHome,
@@ -120,6 +121,15 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
       </Sidenav>
       <div>
         <Heading1>Uw gegevens</Heading1>
+        <div className="todo-expandable-section">
+          <div className="todo-expandable__button">
+            <Icon>
+              <IconChevronDown />
+            </Icon>
+            Label
+          </div>
+          <div className="todo-expandable-section__panel">Content</div>
+        </div>
       </div>
     </div>
   </Layout>
