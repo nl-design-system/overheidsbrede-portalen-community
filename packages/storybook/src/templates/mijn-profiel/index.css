@@ -2,6 +2,10 @@
   --utrecht-space-around: 1;
 
   /* Component spacing tokens that aren't set in voorbeeld-theme */
+  --denhaag-sidenav-display: flex;
+  --denhaag-sidenav-mobile-display: var(--denhaag-sidenav-display);
+  --denhaag-sidenav-flex-direction: column;
+  --denhaag-sidenav-row-gap: 24px;
   --utrecht-article-max-inline-size: 670px;
   --utrecht-button-group-margin-block-start: var(--voorbeeld-space-block-rabbit);
   --utrecht-form-field-margin-block-start: var(--voorbeeld-space-block-rabbit);
