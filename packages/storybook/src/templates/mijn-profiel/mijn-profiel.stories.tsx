@@ -12,11 +12,13 @@ import {
   IconInbox,
   IconLayoutGrid,
   IconParking,
+  IconUser,
 } from '@tabler/icons-react';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
+  Heading1,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
@@ -57,11 +59,11 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
         Mijn gegevens
       </BreadcrumbNavLink>
     </BreadcrumbNav>
-    <div>
+    <div className="todo-profile-page-layout">
       <Sidenav>
         <SidenavList>
           <SidenavItem>
-            <SidenavLink href="/">
+            <SidenavLink href="/#">
               <IconLayoutGrid />
               Home
             </SidenavLink>
@@ -69,13 +71,13 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
         </SidenavList>
         <SidenavList>
           <SidenavItem>
-            <SidenavLink href="/">
+            <SidenavLink href="/#">
               <IconInbox />
               Berichten
             </SidenavLink>
           </SidenavItem>
           <SidenavItem>
-            <SidenavLink href="/">
+            <SidenavLink href="/#">
               <IconArchive />
               Lopende zaken
             </SidenavLink>
@@ -83,31 +85,42 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
         </SidenavList>
         <SidenavList>
           <SidenavItem>
-            <SidenavLink href="/">
+            <SidenavLink href="/#">
               <IconCurrencyEuro />
               Belastingzaken
             </SidenavLink>
           </SidenavItem>
           <SidenavItem>
-            <SidenavLink href="/">
+            <SidenavLink href="/#">
               <IconHome />
               WOZ
             </SidenavLink>
           </SidenavItem>
           <SidenavItem>
-            <SidenavLink href="/">
+            <SidenavLink href="/#">
               <IconParking />
               Parkeren
             </SidenavLink>
           </SidenavItem>
           <SidenavItem>
-            <SidenavLink href="/">
+            <SidenavLink href="/#">
               <IconBuildingCommunity />
               Erfpacht
             </SidenavLink>
           </SidenavItem>
         </SidenavList>
+        <SidenavList>
+          <SidenavItem>
+            <SidenavLink href="/#" current>
+              <IconUser />
+              Gegevens
+            </SidenavLink>
+          </SidenavItem>
+        </SidenavList>
       </Sidenav>
+      <div>
+        <Heading1>Uw gegevens</Heading1>
+      </div>
     </div>
   </Layout>
 );
