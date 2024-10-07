@@ -1,8 +1,18 @@
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
-import { IconChevronRight } from '@tabler/icons-react';
+import {
+  IconArchive,
+  IconBuildingCommunity,
+  IconChevronRight,
+  IconCurrencyEuro,
+  IconHome,
+  IconInbox,
+  IconLayoutGrid,
+  IconParking,
+} from '@tabler/icons-react';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
@@ -47,7 +57,58 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
         Mijn gegevens
       </BreadcrumbNavLink>
     </BreadcrumbNav>
-    Inhoud
+    <div>
+      <Sidenav>
+        <SidenavList>
+          <SidenavItem>
+            <SidenavLink href="/">
+              <IconLayoutGrid />
+              Home
+            </SidenavLink>
+          </SidenavItem>
+        </SidenavList>
+        <SidenavList>
+          <SidenavItem>
+            <SidenavLink href="/">
+              <IconInbox />
+              Berichten
+            </SidenavLink>
+          </SidenavItem>
+          <SidenavItem>
+            <SidenavLink href="/">
+              <IconArchive />
+              Lopende zaken
+            </SidenavLink>
+          </SidenavItem>
+        </SidenavList>
+        <SidenavList>
+          <SidenavItem>
+            <SidenavLink href="/">
+              <IconCurrencyEuro />
+              Belastingzaken
+            </SidenavLink>
+          </SidenavItem>
+          <SidenavItem>
+            <SidenavLink href="/">
+              <IconHome />
+              WOZ
+            </SidenavLink>
+          </SidenavItem>
+          <SidenavItem>
+            <SidenavLink href="/">
+              <IconParking />
+              Parkeren
+            </SidenavLink>
+          </SidenavItem>
+          <SidenavItem>
+            <SidenavLink href="/">
+              <IconBuildingCommunity />
+              Erfpacht
+            </SidenavLink>
+          </SidenavItem>
+        </SidenavList>
+      </Sidenav>
+    </div>
   </Layout>
 );
 
