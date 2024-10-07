@@ -3,7 +3,7 @@ import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
 import { IconArrowLeft } from '@tabler/icons-react';
-import { FormField, LinkButton } from '@utrecht/component-library-react';
+import { FormField, FormLabel, LinkButton } from '@utrecht/component-library-react';
 import {
   Button,
   ButtonGroup,
@@ -42,8 +42,8 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
       <Heading1>Vraag aan de gemeente</Heading1>
       <PreHeading>Stap 1 van 4</PreHeading>
       <Heading2>Uw vraag</Heading2>
-      <FormField label="Stel uw vraag">
-        <Textarea />
+      <FormField label={<FormLabel htmlFor="questionField">Stel uw vraag</FormLabel>}>
+        <Textarea id="questionField" />
       </FormField>
       <ButtonGroup direction="column">
         <Button type="submit" className="voorbeeld-button-spacing" appearance="primary-action-button">
