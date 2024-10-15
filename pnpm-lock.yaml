@@ -90,6 +90,9 @@ importers:
 
   packages/storybook:
     devDependencies:
+      '@gemeente-denhaag/descriptionlist':
+        specifier: 0.1.1-alpha.311
+        version: 0.1.1-alpha.311
       '@gemeente-denhaag/design-tokens-components':
         specifier: 0.2.3-alpha.408
         version: 0.2.3-alpha.408
@@ -1293,6 +1296,9 @@ packages:
   '@eslint/js@8.57.0':
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@gemeente-denhaag/descriptionlist@0.1.1-alpha.311':
+    resolution: {integrity: sha512-ZCPQcNj7djTZKsh0/t9LFOE9TnxpRFzxURLx473qimzecu6gqQ0zSABQ1an1Rd5aKjY6EG6CwcRE7kEArL6m4g==}
 
   '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.408':
     resolution: {integrity: sha512-wRflvVGEju4H+QBwProL/HILjSLfxOtJlFjXI6CFTpH5UlfNLc76pBE3UaihSUz5/GHLIYxHwEM92vaqipHYZQ==}
@@ -7717,6 +7723,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.0': {}
+
+  '@gemeente-denhaag/descriptionlist@0.1.1-alpha.311': {}
 
   '@gemeente-denhaag/design-tokens-components@0.2.3-alpha.408': {}
 

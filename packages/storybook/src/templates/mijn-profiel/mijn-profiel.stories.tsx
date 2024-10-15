@@ -14,16 +14,23 @@ import {
   IconParking,
   IconUser,
 } from '@tabler/icons-react';
+import { FormLabel } from '@utrecht/component-library-react';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
+  Checkbox,
+  FormField,
   Heading1,
+  Heading2,
+  Heading3,
   Icon,
+  Paragraph,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from './components/Layout';
 import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
+import '@gemeente-denhaag/descriptionlist/index.css';
 
 const meta = {
   title: 'Templates/Mijn Profiel/Mijn Gegevens',
@@ -120,6 +127,35 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
       </Sidenav>
       <div>
         <Heading1>Uw gegevens</Heading1>
+        <section>
+          <Heading2>Contact</Heading2>
+          <Paragraph>Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken.</Paragraph>
+          <dl className="denhaag-description-list">
+            <dt className="denhaag-description-list__title">E-mailadres</dt>
+            <dd className="denhaag-description-list__detail">j.vandrouwen@gmail.com</dd>
+            <dt className="denhaag-description-list__title">Telefoonnummer</dt>
+            <dd className="denhaag-description-list__detail">-</dd>
+          </dl>
+        </section>
+        <section>
+          <form>
+            <Heading2>Meldingen</Heading2>
+            <Paragraph>Stel in waarvoor u meldingen wilt ontvangen en op welke manier.</Paragraph>
+            <div>
+              <Heading3>Post</Heading3>
+              <Paragraph>U ontvangt altijd fysieke post als er een besluit is genomen.</Paragraph>
+            </div>
+            <div>
+              <Heading3>Email</Heading3>
+              <Paragraph>U ontvangt altijd fysieke post als er een besluit is genomen.</Paragraph>
+              <FormField>
+                <FormLabel type="checkbox" checked>
+                  <Checkbox /> Ontvang statuswijzigingen per email
+                </FormLabel>
+              </FormField>
+            </div>
+          </form>
+        </section>
       </div>
     </div>
   </Layout>

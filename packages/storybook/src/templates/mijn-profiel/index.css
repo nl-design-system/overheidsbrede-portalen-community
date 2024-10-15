@@ -2,6 +2,7 @@
   --utrecht-space-around: 1;
 
   /* Component spacing tokens that aren't set in voorbeeld-theme */
+  --denhaag-description-list-padding: 8px;
   --denhaag-sidenav-display: flex;
   --denhaag-sidenav-mobile-display: var(--denhaag-sidenav-display);
   --denhaag-sidenav-flex-direction: column;
