@@ -18,6 +18,7 @@ import {
 import { ReactElement } from 'react';
 import { Layout } from './components/Layout';
 import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
+import { VoorbeeldFooterLogo } from '../mijn-profiel/components/Logo';
 
 const meta = {
   title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/3 - Stap 1',
@@ -31,9 +32,17 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) => (
+const TemplatePage = ({
+  logo,
+  theme,
+  footerLogo,
+}: {
+  logo?: ReactElement;
+  theme: string;
+  footerLogo?: ReactElement;
+}) => (
   <>
-    <Layout logo={logo} className={theme}>
+    <Layout logo={logo} className={theme} footerLogo={footerLogo}>
       <Link href="/#" className="voorbeeld-back-link">
         <Icon>
           <IconArrowLeft />
@@ -62,7 +71,9 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
 );
 
 export const Default: Story = {
-  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} />,
+  render: () => (
+    <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
+  ),
 };
 
 export const DenHaagTheme: Story = {
