@@ -132,9 +132,15 @@ importers:
       '@types/react-dom':
         specifier: 18.3.0
         version: 18.3.0
+      '@utrecht/button-react':
+        specifier: 2.0.0
+        version: 2.0.0(@babel/runtime@7.25.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@utrecht/component-library-react':
         specifier: 7.0.0
         version: 7.0.0(@babel/runtime@7.25.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@utrecht/design-tokens':
+        specifier: 2.1.1
+        version: 2.1.1
       '@utrecht/icon':
         specifier: 1.1.0
         version: 1.1.0
@@ -2138,6 +2144,13 @@ packages:
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
+  '@utrecht/button-react@2.0.0':
+    resolution: {integrity: sha512-Adnp/huqbd0G+FzRxeF+yUgohUOjsKke3dp7qA2vc2JMu231nZ0+BFgXayh+NVCW2Ur/Ua+GTKZ5rQ1ZlFSOeA==}
+    peerDependencies:
+      '@babel/runtime': '*'
+      react: '18'
+      react-dom: '18'
+
   '@utrecht/component-library-react@7.0.0':
     resolution: {integrity: sha512-mPKNpPZqnRv3CIrDuwQwQtDqVvuBnJJkPK+5+vK79nalQmMnRrXMgNhM4vdF0bJ4QHyhWYGRU/WemNXIMRvfbQ==}
     peerDependencies:
@@ -2154,6 +2167,9 @@ packages:
         optional: true
       vega:
         optional: true
+
+  '@utrecht/design-tokens@2.1.1':
+    resolution: {integrity: sha512-+mt1fhxwp9f5gBmD9Qh/E0H8w2mIj1ZEvMh9aXY1QdEC9hxRZRdbOjedHhelAtq6kM18SS0AXpgkB2yvhrVwDg==}
 
   '@utrecht/icon@1.1.0':
     resolution: {integrity: sha512-qG9Z4axYxKkGpE5EM4tFylUhqpjFqh0hU89Rq1wFubl98/XUxPH042qsxuBmcyhN5AWyJwlBdAw+sveoxD2dJg==}
@@ -8918,6 +8934,13 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
+  '@utrecht/button-react@2.0.0(@babel/runtime@7.25.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.25.6
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@utrecht/component-library-react@7.0.0(@babel/runtime@7.25.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.25.6
@@ -8925,6 +8948,8 @@ snapshots:
       lodash.chunk: 4.2.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
+
+  '@utrecht/design-tokens@2.1.1': {}
 
   '@utrecht/icon@1.1.0': {}
 

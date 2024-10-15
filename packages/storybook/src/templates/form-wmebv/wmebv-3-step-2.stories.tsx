@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
+import '@utrecht/design-tokens/dist/theme.css';
 import './index.css';
 import { IconArrowLeft } from '@tabler/icons-react';
 import {
@@ -15,6 +16,7 @@ import {
   Icon,
   Link,
   LinkButton,
+  LogoImage,
   Paragraph,
   PreHeading,
   Textbox,
@@ -22,6 +24,7 @@ import {
 import { ReactElement } from 'react';
 import { Layout } from './components/Layout';
 import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
+import { VoorbeeldFooterLogo } from '../mijn-profiel/components/Logo';
 
 const meta = {
   title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/4 - Stap 2',
@@ -35,9 +38,17 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) => (
+const TemplatePage = ({
+  logo,
+  theme,
+  footerLogo,
+}: {
+  logo?: ReactElement;
+  theme: string;
+  footerLogo?: ReactElement;
+}) => (
   <>
-    <Layout logo={logo} className={theme}>
+    <Layout logo={logo} className={theme} footerLogo={footerLogo}>
       <Link href="/#" className="voorbeeld-back-link">
         <Icon>
           <IconArrowLeft />
@@ -113,9 +124,15 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
 );
 
 export const Default: Story = {
-  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} />,
+  render: () => (
+    <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
+  ),
 };
 
 export const DenHaagTheme: Story = {
   render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+};
+
+export const UtrechtTheme: Story = {
+  render: () => <TemplatePage logo={<LogoImage />} theme={'utrecht-theme'} />,
 };
