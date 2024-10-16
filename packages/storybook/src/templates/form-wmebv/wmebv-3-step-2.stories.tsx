@@ -6,9 +6,7 @@ import { IconArrowLeft } from '@tabler/icons-react';
 import {
   Button,
   ButtonGroup,
-  FormField,
-  FormFieldDescription,
-  FormLabel,
+  FormFieldTextbox,
   Heading1,
   Heading2,
   HeadingGroup,
@@ -17,7 +15,6 @@ import {
   LinkButton,
   Paragraph,
   PreHeading,
-  Textbox,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from './components/Layout';
@@ -53,50 +50,20 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
         Om u zo goed mogelijk te kunnen helpen, ontvangen we graag uw contactgegevens. Deze gegevens worden niet met
         anderen gedeeld.
       </Paragraph>
-      <>
-        <FormField className="todo-form-field">
-          <FormLabel htmlFor="nameField">Naam</FormLabel>
-          <Textbox id="nameField"></Textbox>
-        </FormField>
-
-        <FormField className="todo-form-field">
-          <FormLabel htmlFor="streetField">Straat</FormLabel>
-          <Textbox id="streetField"></Textbox>
-        </FormField>
-
-        <FormField className="todo-form-field">
-          <FormLabel htmlFor="houseField">Huisnummer</FormLabel>
-          <Textbox id="houseField"></Textbox>
-        </FormField>
-
-        <FormField className="todo-form-field">
-          <FormLabel htmlFor="houseAdditionField">Toevoeging</FormLabel>
-          <FormFieldDescription>Niet verplicht.</FormFieldDescription>
-          <Textbox id="houseAdditionField"></Textbox>
-        </FormField>
-
-        <FormField className="todo-form-field">
-          <FormLabel htmlFor="postcodeField">Postcode</FormLabel>
-          <Textbox id="postcodeField"></Textbox>
-        </FormField>
-
-        <FormField className="todo-form-field">
-          <FormLabel htmlFor="placeField">Woonplaats</FormLabel>
-          <Textbox id="placeField"></Textbox>
-        </FormField>
-
-        <FormField className="todo-form-field">
-          <FormLabel htmlFor="emailField">E-mailadres</FormLabel>
-          <Textbox id="emailField"></Textbox>
-        </FormField>
-
-        <FormField className="todo-form-field">
-          <FormLabel htmlFor="phoneField">Telefoonnummer</FormLabel>
-          <FormFieldDescription>Niet verplicht.</FormFieldDescription>
-          <Textbox id="phoneField"></Textbox>
-        </FormField>
-      </>
-
+      <FormFieldTextbox label="Naam" id="nameField" autoComplete="name" required />
+      <FormFieldTextbox label="Straat" id="streetField" autoComplete="street-address" required />
+      <FormFieldTextbox label="Huisnummer" id="houseField" required />
+      <FormFieldTextbox label="Toevoeging" id="houseAdditionField" description="Niet verplicht." />
+      <FormFieldTextbox label="Postcode" id="postcodeField" autoComplete="postal-code" required />
+      <FormFieldTextbox label="Woonplaats" id="placeField" required />
+      <FormFieldTextbox label="E-mailadres" id="emailField" autoComplete="email" type="email" required />
+      <FormFieldTextbox
+        label="Telefoonnummer"
+        id="phoneField"
+        description="Niet verplicht."
+        autoComplete="tel"
+        type="tel"
+      />
       <ButtonGroup direction="column">
         <Button type="submit" className="voorbeeld-button-spacing" appearance="primary-action-button">
           Volgende stap
