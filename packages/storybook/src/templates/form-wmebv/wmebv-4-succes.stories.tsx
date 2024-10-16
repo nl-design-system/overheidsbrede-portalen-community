@@ -11,6 +11,7 @@ import {
   Icon,
   Link,
   Paragraph,
+  PreserveData,
   Strong,
   UnorderedList,
   UnorderedListItem,
@@ -42,7 +43,9 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
           </Icon>
           Uw aanvraag is met succes verstuurd
         </Heading1>
-        <Paragraph>Zaaknummer: 2bf9-cne2-9910</Paragraph>
+        <Paragraph>
+          Zaaknummer: <PreserveData>2bf9-cne2-9910</PreserveData>
+        </Paragraph>
       </Alert>
       <Heading2>Wat gaat er nu gebeuren?</Heading2>
       <UnorderedList>
