@@ -23,6 +23,7 @@ import {
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
+import { ExpandableSection } from '../../components/ExpandableSection';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
@@ -129,6 +130,12 @@ const TemplatePage = ({
       </Sidenav>
       <div>
         <Heading1>Uw gegevens</Heading1>
+        <ExpandableSection title="Panel 1" description="This is a brief description that is always visible.">
+          <p>This is the content of the first panel.</p>
+        </ExpandableSection>
+        <ExpandableSection title="Panel 2" description="This is another description for the second panel.">
+          <p>This is the content of the second panel.</p>
+        </ExpandableSection>
       </div>
     </div>
   </Layout>
