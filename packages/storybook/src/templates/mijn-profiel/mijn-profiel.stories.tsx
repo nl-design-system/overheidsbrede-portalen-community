@@ -12,17 +12,25 @@ import {
   IconInbox,
   IconLayoutGrid,
   IconParking,
+  IconPencil,
+  IconPlus,
   IconUser,
 } from '@tabler/icons-react';
+import { Link } from '@utrecht/component-library-react';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
+  DataList,
+  DataListItem,
+  DataListKey,
+  DataListValue,
   Heading1,
   Heading2,
   Icon,
   LinkList,
   LinkListLink,
+  PreserveData,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { ExpandableSection } from '../../components/ExpandableSection';
@@ -135,7 +143,38 @@ const TemplatePage = ({
         <ExpandableSection
           title="Contact"
           description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
-        ></ExpandableSection>
+        >
+          <DataList className="voorbeeld-datalist-style">
+            <DataListItem className="voorbeeld-data-list-item">
+              <DataListKey>
+                <b>E-mailadres</b>
+              </DataListKey>
+              <DataListValue>
+                <PreserveData>j.vandrouwen@gmail.com</PreserveData>
+              </DataListValue>
+              <Link href="/#" className="voorbeeld-back-link">
+                <Icon>
+                  <IconPencil />
+                </Icon>
+                Aanpassen
+              </Link>
+            </DataListItem>
+            <DataListItem className="voorbeeld-data-list-item">
+              <DataListKey>
+                <b>Telefoonnummer</b>
+              </DataListKey>
+              <DataListValue>
+                <PreserveData>-</PreserveData>
+              </DataListValue>
+              <Link href="/#" className="voorbeeld-back-link">
+                <Icon>
+                  <IconPlus />
+                </Icon>
+                Toevoegen
+              </Link>
+            </DataListItem>
+          </DataList>
+        </ExpandableSection>
         <ExpandableSection
           title="Meldingen"
           description="Stel in waarvoor u meldingen wilt ontvangen en op welke manier."
