@@ -19,11 +19,12 @@ import {
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
   Heading1,
+  Heading2,
   Icon,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
-import { Layout } from './components/Layout';
-import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
+import { Layout } from '../../components/Layout';
+import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
   title: 'Templates/Mijn Profiel/Mijn Gegevens',
@@ -37,8 +38,16 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) => (
-  <Layout logo={logo} className={theme}>
+const TemplatePage = ({
+  logo,
+  theme,
+  footerLogo,
+}: {
+  logo: ReactElement;
+  theme: string;
+  footerLogo?: ReactElement;
+}) => (
+  <Layout logo={logo} className={theme} footerLogo={footerLogo}>
     <BreadcrumbNav aria-labelledby="hidden-breadcrumb-header">
       <h2 id="hidden-breadcrumb-header" hidden>
         Kruimelpad
@@ -126,9 +135,13 @@ const TemplatePage = ({ logo, theme }: { logo: ReactElement; theme: string }) =>
 );
 
 export const Default: Story = {
-  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} />,
+  render: () => (
+    <TemplatePage logo={<PageHeaderLogo />} theme={'voorbeeld-theme'} footerLogo={<VoorbeeldFooterLogo />} />
+  ),
 };
 
 export const DenHaagTheme: Story = {
-  render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+  render: () => (
+    <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} footerLogo={<Heading2>Gemeente Den Haag</Heading2>} />
+  ),
 };

@@ -19,9 +19,8 @@ import {
   PreHeading,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
-import { Layout } from './components/Layout';
-import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
-import { VoorbeeldFooterLogo } from '../mijn-profiel/components/Logo';
+import { Layout } from '../../components/Layout';
+import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
   title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/4 - Stap 2',

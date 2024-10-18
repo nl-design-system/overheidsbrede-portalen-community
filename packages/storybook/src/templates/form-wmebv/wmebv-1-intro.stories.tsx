@@ -13,9 +13,8 @@ import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
 import { ReactElement } from 'react';
-import { Layout } from './components/Layout';
-import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
-import { VoorbeeldFooterLogo } from '../mijn-profiel/components/Logo';
+import { Layout } from '../../components/Layout';
+import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
   title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/1 - Intro',
