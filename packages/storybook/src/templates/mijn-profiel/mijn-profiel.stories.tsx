@@ -21,6 +21,8 @@ import {
   Heading1,
   Heading2,
   Icon,
+  LinkList,
+  LinkListLink,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { ExpandableSection } from '../../components/ExpandableSection';
@@ -128,14 +130,59 @@ const TemplatePage = ({
           </SidenavItem>
         </SidenavList>
       </Sidenav>
-      <div>
+      <div className="todo-profile-page-content">
         <Heading1>Uw gegevens</Heading1>
-        <ExpandableSection title="Panel 1" description="This is a brief description that is always visible.">
-          <p>This is the content of the first panel.</p>
-        </ExpandableSection>
-        <ExpandableSection title="Panel 2" description="This is another description for the second panel.">
-          <p>This is the content of the second panel.</p>
-        </ExpandableSection>
+        <ExpandableSection
+          title="Contact"
+          description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
+        ></ExpandableSection>
+        <ExpandableSection
+          title="Meldingen"
+          description="Stel in waarvoor u meldingen wilt ontvangen en op welke manier."
+        ></ExpandableSection>
+        <ExpandableSection
+          title="Persoonsgegevens"
+          description="Dit zijn uw persoonsgegevens zoals naam, bsn, etc."
+        ></ExpandableSection>
+        <ExpandableSection
+          title="Adres"
+          description="Dit zijn uw adresgegevens; u kunt hier ook een verhuizing doorgeven"
+        ></ExpandableSection>
+        <section>
+          <Heading2>Wijzigingen en aanvragen BRP</Heading2>
+          <LinkList>
+            <LinkListLink
+              href="#"
+              icon={
+                <Icon>
+                  <IconChevronRight />
+                </Icon>
+              }
+            >
+              Meer informatie over adresonderzoek
+            </LinkListLink>
+            <LinkListLink
+              href="#"
+              icon={
+                <Icon>
+                  <IconChevronRight />
+                </Icon>
+              }
+            >
+              Gegevens in BRP laten corrigeren, wijzigen of verwijderen
+            </LinkListLink>
+            <LinkListLink
+              href="#"
+              icon={
+                <Icon>
+                  <IconChevronRight />
+                </Icon>
+              }
+            >
+              Geheimhouding persoonsgegevens aanvragen
+            </LinkListLink>
+          </LinkList>
+        </section>
       </div>
     </div>
   </Layout>
