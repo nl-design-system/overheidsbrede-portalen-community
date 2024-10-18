@@ -5,7 +5,7 @@ import './index.css';
 export interface ExpandableSectionProps {
   title: ReactNode;
   description?: ReactNode;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const ExpandableSection: React.FC<ExpandableSectionProps> = ({ title, description, children }) => {

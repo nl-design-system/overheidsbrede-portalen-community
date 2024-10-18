@@ -29,6 +29,7 @@
   --utrecht-page-footer-padding-inline-start: var(--voorbeeld-space-inline-dog);
   --utrecht-page-header-padding-block-start: var(--voorbeeld-space-block-mouse);
   --utrecht-page-header-padding-block-end: var(--voorbeeld-space-block-mouse);
+  --utrecht-link-list-icon-inset-block-start: 6px;
 
   /* Custom component tokens */
   --voorbeeld-logo-icon-color: var(--voorbeeld-color-violet-700);
@@ -110,6 +111,10 @@
 .todo-form-field {
   display: flex;
   flex-direction: column;
+}
+
+.todo-profile-page-content {
+  flex-grow: 1;
 }
 
 @media screen and (width <= 960px) {
