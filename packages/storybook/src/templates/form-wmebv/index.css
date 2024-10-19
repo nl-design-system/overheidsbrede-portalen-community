@@ -135,6 +135,11 @@
 .denhaag-header__logo {
   block-size: 64px;
   inline-size: 180px;
+
+}
+
+.utrecht-document {
+  --utrecht-space-around: 1;
 }
 
 .voorbeeld-back-link {
