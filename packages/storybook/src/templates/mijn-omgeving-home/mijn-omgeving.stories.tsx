@@ -1,3 +1,5 @@
+import { ActionSingle } from '@gemeente-denhaag/action';
+import { CaseCard } from '@gemeente-denhaag/card';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
 import { Meta, StoryObj } from '@storybook/react';
 import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
@@ -12,34 +14,24 @@ import {
   IconInbox,
   IconLayoutGrid,
   IconParking,
-  IconPencil,
-  IconPlus,
   IconUser,
 } from '@tabler/icons-react';
-import { Link } from '@utrecht/component-library-react';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
   BreadcrumbNavSeparator,
-  DataList,
-  DataListItem,
-  DataListKey,
-  DataListValue,
   Heading1,
   Heading2,
   Icon,
-  LinkList,
-  LinkListLink,
-  PreserveData,
+  Paragraph,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
-import { ExpandableSection } from '../../components/ExpandableSection';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Profiel/Mijn Gegevens',
-  id: 'mijn-profiel-1',
+  title: 'Templates/Mijn Omgeving/Overzichtspagina',
+  id: 'mijn-omgeving-1',
   parameters: {
     layout: 'fullscreen',
   },
@@ -83,7 +75,7 @@ const TemplatePage = ({
       <Sidenav>
         <SidenavList>
           <SidenavItem>
-            <SidenavLink href="/#">
+            <SidenavLink href="/#" current>
               <IconLayoutGrid />
               Home
             </SidenavLink>
@@ -131,7 +123,7 @@ const TemplatePage = ({
         </SidenavList>
         <SidenavList>
           <SidenavItem>
-            <SidenavLink href="/#" current>
+            <SidenavLink href="/#">
               <IconUser />
               Gegevens
             </SidenavLink>
@@ -139,88 +131,29 @@ const TemplatePage = ({
         </SidenavList>
       </Sidenav>
       <div className="todo-profile-page-content">
-        <Heading1>Uw gegevens</Heading1>
-        <ExpandableSection
-          title="Contact"
-          description="Hier vindt u uw e-mailadres en telefoonnummer waarmee we u kunnen bereiken."
-        >
-          <DataList className="voorbeeld-datalist-style">
-            <DataListItem className="voorbeeld-data-list-item">
-              <DataListKey>
-                <b>E-mailadres</b>
-              </DataListKey>
-              <DataListValue>
-                <PreserveData>j.vandrouwen@gmail.com</PreserveData>
-              </DataListValue>
-              <Link href="/#" className="voorbeeld-back-link">
-                <Icon>
-                  <IconPencil />
-                </Icon>
-                Aanpassen
-              </Link>
-            </DataListItem>
-            <DataListItem className="voorbeeld-data-list-item">
-              <DataListKey>
-                <b>Telefoonnummer</b>
-              </DataListKey>
-              <DataListValue>
-                <PreserveData>-</PreserveData>
-              </DataListValue>
-              <Link href="/#" className="voorbeeld-back-link">
-                <Icon>
-                  <IconPlus />
-                </Icon>
-                Toevoegen
-              </Link>
-            </DataListItem>
-          </DataList>
-        </ExpandableSection>
-        <ExpandableSection
-          title="Meldingen"
-          description="Stel in waarvoor u meldingen wilt ontvangen en op welke manier."
-        ></ExpandableSection>
-        <ExpandableSection
-          title="Persoonsgegevens"
-          description="Dit zijn uw persoonsgegevens zoals naam, bsn, etc."
-        ></ExpandableSection>
-        <ExpandableSection
-          title="Adres"
-          description="Dit zijn uw adresgegevens; u kunt hier ook een verhuizing doorgeven"
-        ></ExpandableSection>
+        <Heading1>Hallo Jeroen van Drouwen</Heading1>
+        <Paragraph>
+          In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
+          rekeningen betalen en zien wanneer uw aanvraag klaar is.
+        </Paragraph>
         <section>
-          <Heading2>Wijzigingen en aanvragen BRP</Heading2>
-          <LinkList>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Meer informatie over adresonderzoek
-            </LinkListLink>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Gegevens in BRP laten corrigeren, wijzigen of verwijderen
-            </LinkListLink>
-            <LinkListLink
-              href="#"
-              icon={
-                <Icon>
-                  <IconChevronRight />
-                </Icon>
-              }
-            >
-              Geheimhouding persoonsgegevens aanvragen
-            </LinkListLink>
-          </LinkList>
+          <Heading2>Wat moet ik regelen</Heading2>
+          <ActionSingle link={'#'} labels={labels}>
+            Geef informatie voor uw aanvraag subsidie geluidisolatie
+          </ActionSingle>
+          <ActionSingle link={'#'} labels={labels}>
+            Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein
+          </ActionSingle>
+          <ActionSingle link={'#'} labels={labels}>
+            Verleng uw identiteitskaart
+          </ActionSingle>
+        </section>
+        <section>
+          <Heading2>Lopende zaken</Heading2>
+          <div className={'todo-card-layout'}>
+            <CaseCard title={'Aanvraag subsidie geluidsisolatie'} href={'#'} date={'2020-10-18T07:34'} />
+            <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} date={'2020-11-05T07:34'} />
+          </div>
         </section>
       </div>
     </div>
@@ -234,7 +167,17 @@ export const Default: Story = {
 };
 
 export const DenHaagTheme: Story = {
-  render: () => (
-    <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} footerLogo={<Heading2>Gemeente Den Haag</Heading2>} />
-  ),
+  render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
+};
+
+const labels = {
+  today: 'vandaag',
+  yesterday: 'gisteren',
+  before: 'vóór',
+  approachingDeadline: (daysDifference: number) => {
+    if (daysDifference === 1) {
+      return `nog ${daysDifference} dag`;
+    }
+    return `nog ${daysDifference} dagen`;
+  },
 };

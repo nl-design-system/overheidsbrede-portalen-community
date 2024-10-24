@@ -89,7 +89,7 @@
 
   margin-inline-end: auto;
   margin-inline-start: auto;
-  max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
+  max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.25);
 }
 
 .todo-footer-content-group {
@@ -115,6 +115,12 @@
 
 .todo-profile-page-content {
   flex-grow: 1;
+}
+
+.todo-card-layout {
+  column-gap: 24px;
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (width <= 960px) {

@@ -1,0 +1,33 @@
+.todo-expandable-section {
+  border: 1px solid #ccc;
+  inline-size: 100%;
+  margin-block-end: 24px;
+}
+
+.todo-expandable-section__header {
+  align-items: start;
+  background-color: #f9f9fa;
+  column-gap: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  padding-block: 12px;
+  padding-inline: 16px;
+}
+
+.todo-expandable-section__title {
+  font-size: inherit;
+  margin-block: 0;
+}
+
+.todo-expandable-section__button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-expandable-section__content {
+  background-color: #fff;
+  padding-block: 24px;
+  padding-inline: 16px;
+}
