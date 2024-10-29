@@ -13,6 +13,7 @@ import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
 import { ReactElement } from 'react';
+import docs from './wmebv-1-intro.md?raw';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
@@ -21,6 +22,11 @@ const meta = {
   id: 'wmebv-1-intro',
   parameters: {
     layout: 'fullscreen',
+    docs: {
+      description: {
+        component: docs,
+      },
+    },
   },
 } satisfies Meta;
 
