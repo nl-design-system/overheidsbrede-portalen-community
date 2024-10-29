@@ -15,12 +15,18 @@ import './index.css';
 import { ReactElement } from 'react';
 import { Layout } from './components/Layout';
 import { DenHaagLogo, PageHeaderLogo } from './components/Logo';
+import docs from './wmebv-1-intro.md?raw';
 
 const meta = {
   title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/1 - Intro',
   id: 'wmebv-1-intro',
   parameters: {
     layout: 'fullscreen',
+    docs: {
+      description: {
+        component: docs,
+      },
+    },
   },
 } satisfies Meta;
 
