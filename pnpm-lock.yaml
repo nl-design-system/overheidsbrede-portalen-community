@@ -148,8 +148,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       '@utrecht/icon':
-        specifier: 1.1.0
-        version: 1.1.0
+        specifier: 1.2.0
+        version: 1.2.0
       '@vng.nl/assets':
         specifier: workspace:*
         version: link:../../proprietary/assets
@@ -2238,8 +2238,8 @@ packages:
   '@utrecht/design-tokens@2.1.1':
     resolution: {integrity: sha512-+mt1fhxwp9f5gBmD9Qh/E0H8w2mIj1ZEvMh9aXY1QdEC9hxRZRdbOjedHhelAtq6kM18SS0AXpgkB2yvhrVwDg==}
 
-  '@utrecht/icon@1.1.0':
-    resolution: {integrity: sha512-qG9Z4axYxKkGpE5EM4tFylUhqpjFqh0hU89Rq1wFubl98/XUxPH042qsxuBmcyhN5AWyJwlBdAw+sveoxD2dJg==}
+  '@utrecht/icon@1.2.0':
+    resolution: {integrity: sha512-jzVFG06ayqMtXZZrsj6AYnkxFaKqDwA0EMKccNxeGI51EVbaU6TJDgTf696P5vHl+3np70OonACNJyzDKGaLbQ==}
 
   '@vitest/expect@1.6.0':
     resolution: {integrity: sha512-ixEvFVQjycy/oNgHjqsL6AZCDduC+tflRluaHIzKIsdbzkLn2U/iBnVeJwB6HsIjQBdfMR8Z0tRxKUsvFJEeWQ==}
@@ -3297,6 +3297,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -9096,7 +9097,7 @@ snapshots:
 
   '@utrecht/design-tokens@2.1.1': {}
 
-  '@utrecht/icon@1.1.0': {}
+  '@utrecht/icon@1.2.0': {}
 
   '@vitest/expect@1.6.0':
     dependencies:

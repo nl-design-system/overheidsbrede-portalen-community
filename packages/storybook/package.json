@@ -39,7 +39,7 @@
     "@utrecht/component-library-react": "7.2.0",
     "@utrecht/design-tokens": "2.1.1",
     "@utrecht/button-react": "2.0.0",
-    "@utrecht/icon": "1.1.0",
+    "@utrecht/icon": "1.2.0",
     "@vng.nl/assets": "workspace:*",
     "@vng.nl/design-tokens": "workspace:*",
     "@whitespace/storybook-addon-html": "6.1.1",
