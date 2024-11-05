@@ -16,7 +16,6 @@ import {
   IconPlus,
   IconUser,
 } from '@tabler/icons-react';
-import { Link } from '@utrecht/component-library-react';
 import {
   BreadcrumbNav,
   BreadcrumbNavLink,
@@ -28,6 +27,7 @@ import {
   Heading1,
   Heading2,
   Icon,
+  Link,
   LinkList,
   LinkListLink,
   PreserveData,
