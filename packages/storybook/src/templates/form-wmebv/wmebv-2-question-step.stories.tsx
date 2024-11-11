@@ -3,22 +3,25 @@ import '@nl-design-system-unstable/voorbeeld-design-tokens/dist/index.css';
 import '@gemeente-denhaag/design-tokens-components/dist/theme/index.css';
 import './index.css';
 import { IconArrowLeft } from '@tabler/icons-react';
-import { Button } from '@utrecht/button-react/dist/css';
 import {
+  Button,
   ButtonGroup,
+  FormFieldTextarea,
   Heading1,
   Heading2,
+  HeadingGroup,
   Icon,
   Link,
-  Paragraph,
+  LinkButton,
+  PreHeading,
 } from '@utrecht/component-library-react/dist/css-module';
 import { ReactElement } from 'react';
 import { Layout } from '../../components/Layout';
 import { DenHaagLogo, PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/2 - Login',
-  id: 'wmebv-2-intro',
+  title: 'Templates/Meerstappenformulier/WMEBV Contactformulier/2 - Uw vraag',
+  id: 'wmebv-2-step-1',
   parameters: {
     layout: 'fullscreen',
   },
@@ -46,14 +49,21 @@ const TemplatePage = ({
         Terug
       </Link>
       <Heading1>Vraag aan de gemeente</Heading1>
-      <Heading2>Inloggen</Heading2>
-      <Paragraph>
-        Dankzij uw DigiD kunt u overal makkelijk en veilig inloggen. Uw persoonlijke gegevens blijven goed beschermd.
-        Wanneer u inlogt worden uw persoonlijke gegevens automatisch ingevuld.
-      </Paragraph>
-      <ButtonGroup>
-        <Button appearance={'primary-action-button'}>Inloggen</Button>
-        <Button appearance={'secondary-action-button'}>Verder gaan zonder inloggen</Button>
+      <HeadingGroup>
+        <PreHeading>Stap 1 van 4</PreHeading>
+        <Heading2>Uw vraag</Heading2>
+      </HeadingGroup>
+      <FormFieldTextarea label="Stel uw vraag" id="questionField" />
+      <ButtonGroup direction="column">
+        <Button type="submit" className="voorbeeld-button-spacing" appearance="primary-action-button">
+          Volgende stap
+        </Button>
+        <LinkButton inline className="voorbeeld-button-link">
+          Opslaan en later verder
+        </LinkButton>
+        <LinkButton inline className="voorbeeld-button-link">
+          Stoppen met formulier
+        </LinkButton>
       </ButtonGroup>
     </Layout>
   </>
