@@ -76,6 +76,45 @@
   --denhaag-action-border-width: var(--voorbeeld-line-border-width);
   --denhaag-action-border-color: var(--voorbeeld-line-border-color);
   --denhaag-action-background-color: var(--utrecht-document-background-color);
+  --denhaag-file-right-padding-block-start: var(--voorbeeld-space-block-snail);
+  --denhaag-file-right-padding-block-end: var(--voorbeeld-space-block-snail);
+  --denhaag-file-right-padding-inline-start: var(--voorbeeld-space-inline-mouse);
+  --denhaag-file-right-padding-inline-end: var(--voorbeeld-space-inline-mouse);
+  --denhaag-file-right-gap: var(--voorbeeld-space-row-snail);
+  --denhaag-file-border-style: solid;
+  --denhaag-file-link-icon-width: var(--voorbeeld-icon-functional-size);
+  --denhaag-file-link-gap: var(--voorbeeld-space-text-beetle);
+  --denhaag-file-link-hover-color: var(--voorbeeld-interaction-hover-color);
+  --denhaag-file-link-color: var(--voorbeeld-interaction-color);
+  --denhaag-file-left-padding-inline-start: var(--voorbeeld-space-inline-mouse);
+  --denhaag-file-left-padding-inline-end: var(--voorbeeld-space-inline-mouse);
+  --denhaag-file-left-background-color: var(--voorbeeld-color-gray-100);
+  --denhaag-file-border-color: var(--voorbeeld-container-border-color);
+  --denhaag-file-border-width: var(--voorbeeld-border-width-sm);
+  --denhaag-process-steps-step-meta-date-font-size: 20px;
+  --denhaag-process-steps-step-meta-font-size: 16px;
+  --denhaag-process-steps-step-padding-block-start: 0;
+  --denhaag-process-steps-step-padding-block-end: 0;
+  --denhaag-process-steps-step-content-margin: 12px;
+  --denhaag-process-steps-step-collapse-icon-padding: 4px;
+  --denhaag-process-steps-step-collapse-icon-size: 16px;
+  --denhaag-process-steps-step-header-align-items: center;
+  --denhaag-process-steps-line-height: 24px;
+  --denhaag-step-marker-connector-outline-width: 1px;
+  --denhaag-step-marker-nested-icon-size: 10px;
+  --denhaag-step-marker-nested-size: 16px;
+  --denhaag-step-marker-icon-size: 20px;
+  --denhaag-step-marker-size: 32px;
+  --denhaag-step-marker-padding: 12px;
+  --denhaag-step-marker-margin: 0;
+  --denhaag-step-marker-font-weight: 400;
+  --denhaag-step-marker-border-width: 2px;
+  --denhaag-step-marker-current-background-color: black;
+  --denhaag-step-marker-current-color: white;
+  --denhaag-step-marker-background-color: white;
+  --denhaag-step-marker-checked-background-color: black;
+  --denhaag-step-marker-checked-color: white;
+  --denhaag-step-marker-not-checked-background-color: white;
 }
 
 .voorbeeld-back-link {
