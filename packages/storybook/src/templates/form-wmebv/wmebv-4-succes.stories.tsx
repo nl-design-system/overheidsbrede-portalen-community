@@ -95,3 +95,7 @@ export const Default: Story = {
 export const DenHaagTheme: Story = {
   render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
 };
+
+export const HoekscheWaardTheme: Story = {
+  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'hoeksche-waard-theme'} />,
+};

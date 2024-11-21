@@ -102,3 +102,7 @@ export const DenHaagTheme: Story = {
 export const UtrechtTheme: Story = {
   render: () => <TemplatePage logo={<LogoImage />} theme={'utrecht-theme'} />,
 };
+
+export const HoekscheWaardTheme: Story = {
+  render: () => <TemplatePage logo={<PageHeaderLogo />} theme={'hoeksche-waard-theme'} />,
+};
