@@ -56,7 +56,6 @@ const TemplatePage = ({
       vraag via het contactformulier.
     </Paragraph>
     <UnorderedList>
-      <UnorderedListItem>Het duurt ongeveer 5 minuten om dit formulier in te vullen.</UnorderedListItem>
       <UnorderedListItem>Vul alle velden in. Als een veld niet verplicht is, staat dit erbij.</UnorderedListItem>
       <UnorderedListItem>U kunt het formulier tussentijds opslaan en later verder gaan.</UnorderedListItem>
       <UnorderedListItem>
