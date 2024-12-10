@@ -12,6 +12,7 @@
   --utrecht-form-label-font-weight: var(--voorbeeld-typography-font-weight-bold);
   --utrecht-heading-1-margin-block-start: 0;
   --utrecht-heading-1-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-2-margin-block-start: var(--voorbeeld-space-block-rabbit);
   --utrecht-heading-2-margin-block-end: var(--voorbeeld-space-block-rabbit);
   --utrecht-heading-3-margin-block-start: var(--voorbeeld-space-block-rabbit);
   --utrecht-paragraph-margin-block-end: var(--voorbeeld-space-block-rabbit);
@@ -115,6 +116,97 @@
   --denhaag-step-marker-checked-background-color: black;
   --denhaag-step-marker-checked-color: white;
   --denhaag-step-marker-not-checked-background-color: white;
+}
+
+.denhaag-theme {
+  --utrecht-space-around: 1;
+  --utrecht-article-max-inline-size: 670px;
+  --todo-page-header-content-max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
+  --todo-page-header-padding-inline-start: var(--voorbeeld-space-inline-mouse);
+  --todo-page-header-padding-inline-end: var(--voorbeeld-space-inline-mouse);
+  --utrecht-paragraph-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-1-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-1-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-2-margin-block-end: var(--voorbeeld-space-block-rabbit);
+  --utrecht-heading-3-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-button-group-margin-block-start: var(--voorbeeld-space-block-rabbit);
+  --utrecht-page-footer-padding-block-end: var(--voorbeeld-space-block-dog);
+  --utrecht-page-footer-padding-block-start: var(--voorbeeld-space-block-dog);
+  --utrecht-page-footer-padding-inline-end: var(--voorbeeld-space-inline-dog);
+  --utrecht-page-footer-padding-inline-start: var(--voorbeeld-space-inline-dog);
+  --utrecht-page-header-padding-block-start: var(--voorbeeld-space-block-mouse);
+  --utrecht-page-header-padding-block-end: var(--voorbeeld-space-block-mouse);
+  --utrecht-page-padding-inline-start: var(--voorbeeld-space-inline-pig);
+  --utrecht-page-padding-inline-end: var(--voorbeeld-space-inline-pig);
+  --utrecht-page-content-padding-block-start: var(--voorbeeld-space-block-beetle);
+  --utrecht-page-content-padding-block-end: var(--voorbeeld-space-block-dog);
+  --utrecht-page-content-padding-inline-start: 0;
+  --utrecht-page-content-padding-inline-end: 0;
+
+  /* TEMP VOORBEELD SCALE */
+  --voorbeeld-space-relation-onbemind: var(--voorbeeld-space-row-horse);
+  --voorbeeld-space-relation-onbekenden: var(--voorbeeld-space-row-pig);
+  --voorbeeld-space-relation-bekenden: var(--voorbeeld-space-row-cat);
+  --voorbeeld-space-relation-vrienden: var(--voorbeeld-space-row-rat);
+  --voorbeeld-space-relation-besties: var(--voorbeeld-space-row-snail);
+  --voorbeeld-space-relation-kind: 0px;
+  --voorbeeld-space-row-giraffe: 160px;
+  --voorbeeld-space-row-elephant: 96px;
+  --voorbeeld-space-row-horse: 64px;
+  --voorbeeld-space-row-tiger: 48px;
+  --voorbeeld-space-row-pig: 32px;
+  --voorbeeld-space-row-dog: 28px;
+  --voorbeeld-space-row-cat: 24px;
+  --voorbeeld-space-row-rabbit: 20px;
+  --voorbeeld-space-row-rat: 16px;
+  --voorbeeld-space-row-mouse: 12px;
+  --voorbeeld-space-row-snail: 8px;
+  --voorbeeld-space-row-beetle: 4px;
+  --voorbeeld-space-row-ant: 2px;
+  --voorbeeld-space-row-flea: 1px;
+  --voorbeeld-space-column-giraffe: 160px;
+  --voorbeeld-space-column-elephant: 96px;
+  --voorbeeld-space-column-horse: 64px;
+  --voorbeeld-space-column-tiger: 48px;
+  --voorbeeld-space-column-pig: 32px;
+  --voorbeeld-space-column-dog: 28px;
+  --voorbeeld-space-column-cat: 24px;
+  --voorbeeld-space-column-rabbit: 20px;
+  --voorbeeld-space-column-rat: 16px;
+  --voorbeeld-space-column-mouse: 12px;
+  --voorbeeld-space-column-snail: 8px;
+  --voorbeeld-space-column-beetle: 4px;
+  --voorbeeld-space-column-ant: 2px;
+  --voorbeeld-space-column-flea: 1px;
+  --voorbeeld-space-text-dog: 24px;
+  --voorbeeld-space-text-cat: 16px;
+  --voorbeeld-space-text-rabbit: 14px;
+  --voorbeeld-space-text-rat: 12px;
+  --voorbeeld-space-text-mouse: 8px;
+  --voorbeeld-space-text-snail: 6px;
+  --voorbeeld-space-text-beetle: 4px;
+  --voorbeeld-space-text-ant: 2px;
+  --voorbeeld-space-text-flea: 1px;
+  --voorbeeld-space-block-pig: 64px;
+  --voorbeeld-space-block-dog: 48px;
+  --voorbeeld-space-block-cat: 32px;
+  --voorbeeld-space-block-rabbit: 24px;
+  --voorbeeld-space-block-rat: 20px;
+  --voorbeeld-space-block-mouse: 16px;
+  --voorbeeld-space-block-snail: 12px;
+  --voorbeeld-space-block-beetle: 8px;
+  --voorbeeld-space-block-ant: 4px;
+  --voorbeeld-space-block-flea: 2px;
+  --voorbeeld-space-inline-pig: 48px;
+  --voorbeeld-space-inline-dog: 32px;
+  --voorbeeld-space-inline-cat: 28px;
+  --voorbeeld-space-inline-rabbit: 24px;
+  --voorbeeld-space-inline-rat: 20px;
+  --voorbeeld-space-inline-mouse: 16px;
+  --voorbeeld-space-inline-snail: 12px;
+  --voorbeeld-space-inline-beetle: 8px;
+  --voorbeeld-space-inline-ant: 4px;
+  --voorbeeld-space-inline-flea: 2px;
 }
 
 .voorbeeld-back-link {
