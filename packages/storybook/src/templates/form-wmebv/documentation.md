@@ -3,7 +3,20 @@
 Voordat de huidige versie van het generieke e-formulier (meerstappenformulier) in deze Storybook-documentatie werd opgenomen, is er een eerdere versie ontwikkeld en gedocumenteerd in de Hulpgids Wmebv: e-formulieren en notificeren. Deze hulpgids vormde de basis voor het ontwerp en de implementatie van het meerstappenformulier.
 
 De hulpgids introduceerde een eerste generiek e-formulier, dat tot stand kwam in samenwerking met gemeenten, leveranciers en VNG Realisatie. Dit formulier werd uitgebreid getest op gebruiksvriendelijkheid en toegankelijkheid, wat leidde tot inzichten en verbeteringen die zijn verwerkt in de vernieuwde versie die nu beschikbaar is in het Storybook.
- ## Hulpgids Wmebv: e-formulieren en notificeren
+
+## Figma-ontwerpbestand
+
+Bij deze Storybook hoort een uitgebreid **Figma-ontwerpbestand**, waarin dezelfde templates zijn uitgewerkt op basis van de componenten uit het NL Design System. Dit bestand biedt handige referentie voor designers, zodat zij snel en efficiënt kunnen werken aan nieuwe ontwerpen die aansluiten bij de standaarden van het NL Design System.
+
+Het Figma-bestand is handig omdat:
+
+- **Consistentie**: Het gebruik van NL Design System figma componenten zorgt ervoor dat ontwerpen consistent blijven, zowel visueel als functioneel.
+- **Efficiëntie**: Designers kunnen bestaande componenten hergebruiken, wat de tijd die nodig is voor het maken van nieuwe ontwerpen aanzienlijk verkort.
+- **Samenwerking**: Het bestand fungeert als een gedeeld referentiepunt voor designers en ontwikkelaars, wat de communicatie en samenwerking binnen teams vereenvoudigt.
+
+Je kunt het Figma-ontwerpbestand bekijken via de volgende link: [Figma - Overheidsbrede portalen templates](https://www.figma.com/design/iZgSIuU8hvH9nw3h7WO1ZY/Overheidsbrede-portalen---Templates?node-id=1-3&node-type=canvas&t=KxnX9WoZ6S4tSxuF-0).
+
+## Hulpgids Wmebv: e-formulieren en notificeren
 
 De hulpgids is ontwikkeld om gemeenten en leveranciers te ondersteunen bij het toepassen van de vereisten van de Wet modernisering elektronisch bestuurlijk verkeer (Wmebv). De gids bevat toelichting, praktijkvoorbeelden en een generiek voorbeeldformulier, en richt zich specifiek op het ontwerpen en implementeren van digitaal toegankelijke en gebruiksvriendelijke e-formulieren en notificaties.
 
