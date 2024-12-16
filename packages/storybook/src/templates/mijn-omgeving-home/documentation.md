@@ -4,6 +4,18 @@
 
 De **MijnOmgeving**-services bieden burgers een gepersonaliseerde digitale omgeving waarin zij eenvoudig toegang hebben tot hun persoonlijke gegevens, gemeentelijke diensten en relevante informatie. Gemeente Den Haag werkt met een systeem gebaseerd op **Generieke Services**, waarbij consistentie en gebruiksvriendelijkheid centraal staan. Dit biedt een modulaire aanpak om verschillende diensten efficiënt te integreren. Meer informatie over Generieke Services is te vinden via [denhaag.nl](https://www.denhaag.nl).
 
+## Figma-ontwerpbestand
+
+Bij deze Storybook hoort een uitgebreid **Figma-ontwerpbestand**, waarin dezelfde templates zijn uitgewerkt op basis van de componenten uit het NL Design System. Dit bestand biedt handige referentie voor designers, zodat zij snel en efficiënt kunnen werken aan nieuwe ontwerpen die aansluiten bij de standaarden van het NL Design System.
+
+Het Figma-bestand is handig omdat:
+
+- **Consistentie**: Het gebruik van NL Design System figma componenten zorgt ervoor dat ontwerpen consistent blijven, zowel visueel als functioneel.
+- **Efficiëntie**: Designers kunnen bestaande componenten hergebruiken, wat de tijd die nodig is voor het maken van nieuwe ontwerpen aanzienlijk verkort.
+- **Samenwerking**: Het bestand fungeert als een gedeeld referentiepunt voor designers en ontwikkelaars, wat de communicatie en samenwerking binnen teams vereenvoudigt.
+
+Je kunt het Figma-ontwerpbestand bekijken via de volgende link: [Figma - Overheidsbrede portalen templates](https://www.figma.com/design/iZgSIuU8hvH9nw3h7WO1ZY/Overheidsbrede-portalen---Templates?node-id=1-3&node-type=canvas&t=KxnX9WoZ6S4tSxuF-0).
+
 ---
 
 ## Gebruikersonderzoek naar MijnOmgeving

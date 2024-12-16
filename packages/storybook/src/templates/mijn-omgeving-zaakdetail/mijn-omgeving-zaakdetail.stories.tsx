@@ -202,12 +202,9 @@ const timeline = (
             title: 'Afspraak meten geluidsoverlast gemaakt',
           },
           {
+            status: 'checked',
             id: 2,
             title: 'Geluidsoverlast gemeten',
-          },
-          {
-            id: 3,
-            title: 'Onderzoek resultaten verwerkt',
           },
         ],
         title: 'Onderzoek naar geluidsoverlast',
