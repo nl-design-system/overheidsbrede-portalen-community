@@ -54,6 +54,15 @@ const TemplatePage = ({
         <Heading2>Uw vraag</Heading2>
       </HeadingGroup>
       <FormFieldTextarea label="Stel uw vraag" id="questionField" />
+      <div>
+        <p>Bestand toevoegen</p>
+        <ul>
+          <li>U kunt meerdere bestanden tegelijk toevoegen.</li>
+          <li>U mag maximaal 10 Mb aan bestanden toevoegen.</li>
+          <li>Toegestane bestandstypen: doc, docx, xslx, pdf, zip, jpg, png, bmp en gif.</li>
+        </ul>
+        <Button appearance="secondary-action-button">Bestand kiezen</Button>
+      </div>
       <ButtonGroup direction="column">
         <Button type="submit" className="voorbeeld-button-spacing" appearance="primary-action-button">
           Volgende stap
