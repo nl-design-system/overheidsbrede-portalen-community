@@ -170,6 +170,10 @@
   --voorbeeld-space-inline-flea: 2px;
 }
 
+.utrecht-document {
+  --utrecht-space-around: 1;
+}
+
 .voorbeeld-back-link {
   align-items: center;
   column-gap: 8px;
@@ -253,6 +257,13 @@
   column-gap: 24px;
   display: flex;
   flex-direction: row;
+}
+
+.todo-profile-page-layout {
+  display: flex;
+  flex-direction: row;
+  padding-block-start: var(--voorbeeld-space-block-cat);
+  padding-inline-start: var(--voorbeeld-space-inline-beetle);
 }
 
 @media screen and (width <= 960px) {
