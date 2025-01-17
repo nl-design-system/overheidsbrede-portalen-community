@@ -13,7 +13,7 @@ addons.register('my/panel', () => {
 });
 
 const DesignTokenUploaderTab = () => {
-  const [themeName, setThemeName] = useState<string>(null);
+  const [themeName, setThemeName] = useState<string>();
   const { storyId } = useStorybookState();
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const iframeUrl = `/iframe.html?id=${storyId}&viewMode=story`;
