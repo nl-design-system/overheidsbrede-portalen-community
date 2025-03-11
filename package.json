@@ -13,8 +13,8 @@
     "directory": "."
   },
   "engines": {
-    "node": "^20",
-    "pnpm": "^9"
+    "node": "^22",
+    "pnpm": "^10"
   },
   "workspaces": [
     "./packages/*",
@@ -80,5 +80,5 @@
   "dependencies": {
     "http-server": "14.1.1"
   },
-  "packageManager": "pnpm@9.6.0"
+  "packageManager": "pnpm@10.6.2"
 }
