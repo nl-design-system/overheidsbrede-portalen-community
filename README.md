@@ -1,10 +1,8 @@
 <!-- @license CC0-1.0 -->
 
-# Example Design System
+# Overheidsbrede portalen
 
-This design system is based on the NL Design System architecture.
-
-For more info about the NL Design System and learn about things happening in our open source community, join the `#nl-design-system` Slack via [praatmee.codefor.nl](https://praatmee.codefor.nl)!
+This storybook contains a collection of portal (Mijn Omgeving) templates built with NL Design System components, and using validated patterns.
 
 ## Code of Conduct
 
