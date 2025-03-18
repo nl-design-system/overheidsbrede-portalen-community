@@ -21,6 +21,7 @@
     "./proprietary/*"
   ],
   "devDependencies": {
+    "@changesets/cli": "2.28.1",
     "@lerna-lite/cli": "3.9.0",
     "@lerna-lite/publish": "3.9.0",
     "@lerna-lite/run": "3.9.0",
