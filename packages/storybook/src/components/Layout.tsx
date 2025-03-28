@@ -7,6 +7,7 @@ import {
   PageFooter,
   PageHeader,
 } from '@utrecht/component-library-react/dist/css-module';
+import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 
 interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> {
@@ -16,7 +17,7 @@ interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> 
 
 export const Layout = ({ logo, children, className, footerLogo, ...props }: LayoutProps) => {
   return (
-    <div className={`utrecht-document ${className}`} {...props}>
+    <Root className={`utrecht-document ${className}`} {...props}>
       <PageHeader className="voorbeeld-page-header">
         <div className="todo-page-header__content">{logo}</div>
       </PageHeader>
@@ -49,6 +50,6 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
           </div>
         </div>
       </PageFooter>
-    </div>
+    </Root>
   );
 };
