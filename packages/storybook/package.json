@@ -40,7 +40,7 @@
     "@storybook/preview-api": "8.2.9",
     "@storybook/react": "8.2.9",
     "@storybook/react-vite": "8.2.9",
-    "@tabler/icons-react": "3.14.0",
+    "@tabler/icons-react": "3.22.0",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
     "@utrecht/component-library-react": "9.0.3",
