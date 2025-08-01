@@ -81,6 +81,7 @@ jobs:
         uses: chromaui/action@b5848056bb67ce5f1cccca8e62a37cbd9dd42871 # v13.0.1
         with:
           autoAcceptChanges: main
+          exitOnceUploaded: true
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: packages/storybook/dist/
 
