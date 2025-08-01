@@ -7,7 +7,7 @@ import {
   PageFooter,
   PageHeader,
 } from '@utrecht/component-library-react/dist/css-module';
-import { Root } from '@utrecht/root-react/dist/css';
+import { Root } from '@utrecht/root-react/dist';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 
 interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> {
