@@ -1,6 +1,11 @@
 .voorbeeld-theme {
   --utrecht-space-around: 1;
 
+  /* Amsterdam component tokens */
+  --ams-grid-wide-column-count: 12;
+  --ams-grid-medium-column-count: 12;
+  --ams-grid-column-count: 12;
+
   /* Component spacing tokens that aren't set in voorbeeld-theme */
   --denhaag-sidenav-display: flex;
   --denhaag-sidenav-mobile-display: var(--denhaag-sidenav-display);
