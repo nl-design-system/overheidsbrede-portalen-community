@@ -1,3 +1,5 @@
+import '@amsterdam/design-system-css/dist/grid/grid.css';
+import { Grid } from '@amsterdam/design-system-react';
 import { ActionSingle } from '@gemeente-denhaag/action';
 import { CaseCard } from '@gemeente-denhaag/card';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '@gemeente-denhaag/sidenav';
@@ -71,66 +73,68 @@ const TemplatePage = ({
         Mijn gegevens
       </BreadcrumbNavLink>
     </BreadcrumbNav>
-    <div className="todo-profile-page-layout">
-      <Sidenav>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#" current>
-              <IconLayoutGrid />
-              Home
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconInbox />
-              Berichten
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconArchive />
-              Lopende zaken
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconCurrencyEuro />
-              Belastingzaken
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconHome />
-              WOZ
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconParking />
-              Parkeren
-            </SidenavLink>
-          </SidenavItem>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconBuildingCommunity />
-              Erfpacht
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-        <SidenavList>
-          <SidenavItem>
-            <SidenavLink href="/#">
-              <IconUser />
-              Gegevens
-            </SidenavLink>
-          </SidenavItem>
-        </SidenavList>
-      </Sidenav>
-      <div className="todo-profile-page-content">
+    <Grid>
+      <Grid.Cell span={4}>
+        <Sidenav>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#" current>
+                <IconLayoutGrid />
+                Home
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconInbox />
+                Berichten
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconArchive />
+                Lopende zaken
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconCurrencyEuro />
+                Belastingzaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconHome />
+                WOZ
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconParking />
+                Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconBuildingCommunity />
+                Erfpacht
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <IconUser />
+                Gegevens
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+        </Sidenav>
+      </Grid.Cell>
+      <Grid.Cell span={8}>
         <Heading1>Hallo Jeroen van Drouwen</Heading1>
         <Paragraph>
           In ‘Mijn omgeving’ kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw
@@ -155,8 +159,8 @@ const TemplatePage = ({
             <CaseCard title={'Aanvraag parkeervergunning'} href={'#'} date={'2020-11-05T07:34'} />
           </div>
         </section>
-      </div>
-    </div>
+      </Grid.Cell>
+    </Grid>
   </Layout>
 );
 
