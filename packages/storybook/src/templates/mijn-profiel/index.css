@@ -5,15 +5,22 @@
   --ams-grid-wide-column-count: 12;
   --ams-grid-medium-column-count: 12;
   --ams-grid-column-count: 12;
+  --ams-breakpoint-narrow: 768px;
+  --ams-breakpoint-medium: 1024px;
+  --ams-breakpoint-wide: 1200px;
+  --ams-grid-padding-inline: 1em; /* test size */
+  --ams-grid-padding-block-xl: 2em; /* test size */
+  --ams-grid-medium-padding-inline: 2em; /* test size */
+  --ams-grid-row-gap-xl: 1em; /* test size */
+  --ams-grid-column-gap: 1em; /* test size */
 
   /* Amsterdam Page Footer tokens */
-
-  --ams-page-footer-menu-column-gap: 1em; /* test size */
-  --ams-page-footer-menu-padding-block: 1em; /* test size */
-  --ams-page-footer-menu-padding-inline: 1em; /* test size */
+  --ams-page-footer-menu-column-gap: var(--voorbeeld-space-block-mouse); /* test size */
+  --ams-page-footer-menu-padding-block: var(--voorbeeld-space-block-mouse); /* test size */
+  --ams-page-footer-menu-padding-inline: var(--voorbeeld-space-block-mouse); /* test size */
   --ams-page-footer-menu-row-gap: 0.5em; /* test size */
-  --ams-page-footer-menu-medium-padding-inline: 1em; /* test size */
-  --ams-page-footer-menu-wide-padding-inline: 1em; /* test size */
+  --ams-page-footer-menu-medium-padding-inline: var(--voorbeeld-space-block-mouse); /* test size */
+  --ams-page-footer-menu-wide-padding-inline: var(--voorbeeld-space-block-mouse); /* test size */
   --ams-page-footer-menu-link-color: var(--voorbeeld-color-white);
   --ams-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
 
@@ -213,6 +220,10 @@
   max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
 }
 
+.todo-page-footer__content h2 {
+  margin-block-start: 0; /* Replaces margin-top, works in RTL */
+}
+
 .ams-page-footer__spotlight {
   --ams-page-footer-menu-link-color: var(--voorbeeld-color-white);
   --ams-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
@@ -272,9 +283,23 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (width <= 960px) {
+/* @media screen and (width <= 960px) {
   .todo-page-footer__content {
-    /* seems like a hacky way but works */
+
     --ams-grid-column-count: 1;
+  }
+} */
+
+/* Medium */
+@media (width <= 1023px) {
+  .voorbeeld-theme {
+    --ams-grid-column-count: 8;
+  }
+}
+
+/* Narrow */
+@media (width <= 767px) {
+  .voorbeeld-theme {
+    --ams-grid-column-count: 4;
   }
 }
