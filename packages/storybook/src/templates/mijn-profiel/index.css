@@ -8,12 +8,12 @@
 
   /* Amsterdam Page Footer tokens */
 
-  /* --ams-page-footer-menu-column-gap:;
-  --ams-page-footer-menu-padding-block:;
-  --ams-page-footer-menu-padding-inline:;
-  --ams-page-footer-menu-row-gap:;
-  --ams-page-footer-menu-medium-padding-inline:;
-  --ams-page-footer-menu-wide-padding-inline:; */
+  --ams-page-footer-menu-column-gap: 1em; /* test size */
+  --ams-page-footer-menu-padding-block: 1em; /* test size */
+  --ams-page-footer-menu-padding-inline: 1em; /* test size */
+  --ams-page-footer-menu-row-gap: 0.5em; /* test size */
+  --ams-page-footer-menu-medium-padding-inline: 1em; /* test size */
+  --ams-page-footer-menu-wide-padding-inline: 1em; /* test size */
   --ams-page-footer-menu-link-color: var(--voorbeeld-color-white);
   --ams-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
 
@@ -217,12 +217,15 @@
   --ams-page-footer-menu-link-color: var(--voorbeeld-color-white);
   --ams-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
   --utrecht-heading-2-color: var(--voorbeeld-color-white);
+  --utrecht-heading-2-padding-start: 2em;
   --utrecht-paragraph-color: var(--voorbeeld-color-white);
   --utrecht-link-color: var(--voorbeeld-color-white);
   --utrecht-link-hover-color: var(--voorbeeld-color-gray-100);
 
   background-color: var(--ams-page-footer-spotlight-background-color);
   color: var(--voorbeeld-color-white);
+  padding-block-end: 1em;
+  padding-block-start: 2em;
 }
 
 .ams-page-footer__spotlight * {
@@ -238,11 +241,9 @@
   stroke: var(--voorbeeld-color-white);
 }
 
-.todo-footer-content-block {
-  color: var(--voorbeeld-color-white);
-}
-
 .todo-footer-link-menu {
+  display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
@@ -252,6 +253,7 @@
 }
 
 /* REST */
+
 .todo-form-field {
   display: flex;
   flex-direction: column;
@@ -268,10 +270,11 @@
   padding-inline-start: var(--voorbeeld-space-inline-beetle);
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (width <= 960px) {
-  .todo-footer-content-group {
-    align-items: start;
-    flex-direction: column;
-    gap: 1em;
+  .todo-page-footer__content {
+    /* seems like a hacky way but works */
+    --ams-grid-column-count: 1;
   }
 }
