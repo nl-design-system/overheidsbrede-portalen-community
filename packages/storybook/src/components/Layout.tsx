@@ -1,12 +1,7 @@
-import {
-  Heading2,
-  Link,
-  LinkList,
-  LinkListLink,
-  PageContent,
-  PageFooter,
-  PageHeader,
-} from '@utrecht/component-library-react/dist/css-module';
+import '@amsterdam/design-system-css/dist/grid/grid.css';
+import '@amsterdam/design-system-css/dist/page-footer/page-footer.css';
+import { Grid, PageFooter } from '@amsterdam/design-system-react';
+import { Heading2, Link, PageContent, PageHeader } from '@utrecht/component-library-react/dist/css-module';
 import { Root } from '@utrecht/root-react/dist/css';
 import { HTMLAttributes, PropsWithChildren, ReactElement } from 'react';
 
@@ -24,11 +19,12 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
       <PageContent className="todo-page-content">
         <main className={'utrecht-page-content__main'}>{children}</main>
       </PageContent>
+
       <PageFooter>
-        <div className="todo-page-footer__content">
-          <div className="todo-footer-content-group">
-            {footerLogo && <div className="todo-footer-content-block">{footerLogo}</div>}
-            <div className="todo-footer-content-block">
+        <PageFooter.Spotlight className="ams-page-footer__spotlight">
+          <Grid paddingVertical="x-large" className="todo-page-footer__content">
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>{footerLogo && <div>{footerLogo}</div>}</Grid.Cell>
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
               <Heading2>Contact</Heading2>
               <address className="todo-address utrecht-paragraph">
                 Bel <Link href="tel:453453">453 453</Link> (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of stuur
@@ -38,17 +34,27 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
                 </Link>
                 {'.'}
               </address>
-            </div>
-            <div className="todo-footer-content-block">
-              <LinkList>
-                <LinkListLink href="/">Bescherming persoonsgegevens</LinkListLink>
-                <LinkListLink href="/">Gebruikersvoorwaarden</LinkListLink>
-                <LinkListLink href="/">Proclaimer</LinkListLink>
-                <LinkListLink href="/">Cookieverklaring</LinkListLink>
-              </LinkList>
-            </div>
-          </div>
-        </div>
+            </Grid.Cell>
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
+              <PageFooter.Menu className="todo-footer-link-menu">
+                <PageFooter.MenuLink href="/">Over gemeente Voorbeeld</PageFooter.MenuLink>
+                <PageFooter.MenuLink href="/">Nieuwsbrief</PageFooter.MenuLink>
+                <PageFooter.MenuLink href="/">Social Media</PageFooter.MenuLink>
+                <PageFooter.MenuLink href="/">Werken bij gemeente Voorbeeld</PageFooter.MenuLink>
+              </PageFooter.Menu>
+            </Grid.Cell>
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
+              <PageFooter.Menu className="todo-footer-link-menu">
+                <PageFooter.MenuLink color="inverse" href="/">
+                  Bescherming persoonsgegevens
+                </PageFooter.MenuLink>
+                <PageFooter.MenuLink href="/">Gebruikersvoorwaarden</PageFooter.MenuLink>
+                <PageFooter.MenuLink href="/">Proclaimer</PageFooter.MenuLink>
+                <PageFooter.MenuLink href="/">Cookieverklaring</PageFooter.MenuLink>
+              </PageFooter.Menu>
+            </Grid.Cell>
+          </Grid>
+        </PageFooter.Spotlight>
       </PageFooter>
     </Root>
   );
