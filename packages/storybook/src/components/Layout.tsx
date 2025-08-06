@@ -23,8 +23,8 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
       <PageFooter>
         <PageFooter.Spotlight className="ams-page-footer__spotlight">
           <Grid paddingVertical="x-large" className="todo-page-footer__content">
-            <Grid.Cell span={3}>{footerLogo && <div>{footerLogo}</div>}</Grid.Cell>
-            <Grid.Cell span={3}>
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>{footerLogo && <div>{footerLogo}</div>}</Grid.Cell>
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
               <Heading2>Contact</Heading2>
               <address className="todo-address utrecht-paragraph">
                 Bel <Link href="tel:453453">453 453</Link> (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of stuur
@@ -35,7 +35,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
                 {'.'}
               </address>
             </Grid.Cell>
-            <Grid.Cell span={3}>
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
               <PageFooter.Menu className="todo-footer-link-menu">
                 <PageFooter.MenuLink href="/">Over gemeente Voorbeeld</PageFooter.MenuLink>
                 <PageFooter.MenuLink href="/">Nieuwsbrief</PageFooter.MenuLink>
@@ -43,7 +43,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
                 <PageFooter.MenuLink href="/">Werken bij gemeente Voorbeeld</PageFooter.MenuLink>
               </PageFooter.Menu>
             </Grid.Cell>
-            <Grid.Cell span={3}>
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
               <PageFooter.Menu className="todo-footer-link-menu">
                 <PageFooter.MenuLink color="inverse" href="/">
                   Bescherming persoonsgegevens
