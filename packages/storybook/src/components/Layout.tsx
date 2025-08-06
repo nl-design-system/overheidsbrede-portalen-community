@@ -1,4 +1,5 @@
 import '@amsterdam/design-system-css/dist/grid/grid.css';
+import '@amsterdam/design-system-css/dist/page-footer/page-footer.css';
 import { Grid, PageFooter } from '@amsterdam/design-system-react';
 import { Heading2, Link, PageContent, PageHeader } from '@utrecht/component-library-react/dist/css-module';
 import { Root } from '@utrecht/root-react/dist/css';
@@ -22,27 +23,21 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
       <PageFooter>
         <PageFooter.Spotlight className="ams-page-footer__spotlight">
           <Grid paddingVertical="x-large" className="todo-page-footer__content">
+            <Grid.Cell span={3}>{footerLogo && <div>{footerLogo}</div>}</Grid.Cell>
             <Grid.Cell span={3}>
-              {footerLogo && <div className="todo-footer-content-block">{footerLogo}</div>}
-            </Grid.Cell>
-            <Grid.Cell span={3}>
-              <div className="todo-footer-content-block">
-                <Heading2>Contact</Heading2>
-                <address className="todo-address utrecht-paragraph">
-                  Bel <Link href="tel:453453">453 453</Link> (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of
-                  stuur een e-mail naar{' '}
-                  <Link href="mailto:vragen@gemeentevoorbeeld.nl">
-                    <span className="utrecht-url-data">vragen@gemeentevoorbeeld.nl</span>
-                  </Link>
-                  {'.'}
-                </address>
-              </div>
+              <Heading2>Contact</Heading2>
+              <address className="todo-address utrecht-paragraph">
+                Bel <Link href="tel:453453">453 453</Link> (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of stuur
+                een e-mail naar{' '}
+                <Link href="mailto:vragen@gemeentevoorbeeld.nl">
+                  <span className="utrecht-url-data">vragen@gemeentevoorbeeld.nl</span>
+                </Link>
+                {'.'}
+              </address>
             </Grid.Cell>
             <Grid.Cell span={3}>
               <PageFooter.Menu className="todo-footer-link-menu">
-                <PageFooter.MenuLink className="todo-footer-link" href="/">
-                  Over gemeente Voorbeeld
-                </PageFooter.MenuLink>
+                <PageFooter.MenuLink href="/">Over gemeente Voorbeeld</PageFooter.MenuLink>
                 <PageFooter.MenuLink href="/">Nieuwsbrief</PageFooter.MenuLink>
                 <PageFooter.MenuLink href="/">Social Media</PageFooter.MenuLink>
                 <PageFooter.MenuLink href="/">Werken bij gemeente Voorbeeld</PageFooter.MenuLink>
