@@ -7,7 +7,11 @@ const preview: Preview = {
     options: {
       panelPosition: 'right',
       storySort: {
-        order: ['Overheidsbrede Portalen', 'Templates'],
+        order: [
+          'Overheidsbrede Portalen',
+          'Templates',
+          ['Mijn Omgeving', ['Basis', 'Overzichtspagina', 'Zaakdetailpagina'], 'Mijn Profiel'],
+        ],
       },
     },
   },
