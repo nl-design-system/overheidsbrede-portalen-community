@@ -217,10 +217,6 @@
   max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
 }
 
-.todo-page-footer__content h2 {
-  margin-block-start: 0;
-}
-
 .ams-page-footer__spotlight {
   --ams-page-footer-menu-link-color: var(--voorbeeld-color-white);
   --ams-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
