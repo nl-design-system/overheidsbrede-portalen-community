@@ -36,7 +36,6 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               <Heading level={2} appearance="utrecht-heading-4">
                 Contact
               </Heading>
-              {/* waarom adress gebruikt? evt. andere optie bijv. paragraph? of als linklist? */}
               <address className="todo-address utrecht-paragraph">
                 Bel <Link href="tel:453453">453 453</Link> (maandag tot en met vrijdag van 09.00 tot 17.00 uur) of stuur
                 een e-mail naar{' '}
