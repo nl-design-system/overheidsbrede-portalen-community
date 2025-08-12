@@ -267,20 +267,3 @@
   padding-block-start: var(--voorbeeld-space-block-cat);
   padding-inline-start: var(--voorbeeld-space-inline-beetle);
 }
-
-/* MEDIA QUERIES */
-.ams-grid.todo-page-footer__content {
-  --ams-grid-column-count: 12;
-}
-
-@media (width <= 1200px) {
-  .ams-grid.todo-page-footer__content {
-    --ams-grid-column-count: 6;
-  }
-}
-
-@media (width <= 850px) {
-  .ams-grid.todo-page-footer__content {
-    --ams-grid-column-count: 3 !important;
-  }
-}
