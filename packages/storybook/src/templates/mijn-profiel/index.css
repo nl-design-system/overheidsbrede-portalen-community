@@ -3,11 +3,8 @@
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
-  --ams-grid-medium-column-count: 12;
-  --ams-grid-column-count: 12;
-  --ams-breakpoint-narrow: 768px;
-  --ams-breakpoint-medium: 1024px;
-  --ams-breakpoint-wide: 1200px;
+  --ams-grid-medium-column-count: 6;
+  --ams-grid-narrow-column-count: 3;
   --ams-grid-padding-inline: 1em; /* test size */
   --ams-grid-padding-block-xl: 2em; /* test size */
   --ams-grid-medium-padding-inline: 2em; /* test size */
@@ -272,17 +269,18 @@
 }
 
 /* MEDIA QUERIES */
+.ams-grid.todo-page-footer__content {
+  --ams-grid-column-count: 12;
+}
 
-/* Medium */
-@media (width <= 1023px) {
-  .voorbeeld-theme {
-    --ams-grid-column-count: 8;
+@media (width <= 1200px) {
+  .ams-grid.todo-page-footer__content {
+    --ams-grid-column-count: 6;
   }
 }
 
-/* Narrow */
-@media (width <= 767px) {
-  .voorbeeld-theme {
-    --ams-grid-column-count: 4;
+@media (width <= 850px) {
+  .ams-grid.todo-page-footer__content {
+    --ams-grid-column-count: 3 !important;
   }
 }

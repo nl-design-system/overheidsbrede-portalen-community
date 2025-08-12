@@ -30,9 +30,9 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
       <PageFooter>
         <PageFooter.Spotlight>
           <Grid className="todo-page-footer__content">
-            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>{footerLogo && <div>{footerLogo}</div>}</Grid.Cell>
+            <Grid.Cell span={3}>{footerLogo && <div>{footerLogo}</div>}</Grid.Cell>
 
-            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
+            <Grid.Cell span={3}>
               <Heading level={2} appearance="utrecht-heading-4">
                 Contact
               </Heading>
@@ -47,7 +47,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               </address>
             </Grid.Cell>
 
-            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
+            <Grid.Cell span={3}>
               <Heading level={2} appearance="utrecht-heading-4">
                 Meer weten
               </Heading>
@@ -59,7 +59,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               </LinkList>
             </Grid.Cell>
 
-            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
+            <Grid.Cell span={3}>
               <Heading level={2} appearance="utrecht-heading-4">
                 Over deze site
               </Heading>
