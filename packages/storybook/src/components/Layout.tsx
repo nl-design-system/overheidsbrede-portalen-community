@@ -28,8 +28,8 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
       </PageContent>
 
       <PageFooter>
-        <PageFooter.Spotlight>
-          <Grid className="todo-page-footer__content">
+        <PageFooter.Spotlight className="todo-page-footer__spotlight">
+          <Grid className="todo-page-footer__grid">
             <Grid.Cell span={3}>{footerLogo && <div>{footerLogo}</div>}</Grid.Cell>
 
             <Grid.Cell span={3}>
