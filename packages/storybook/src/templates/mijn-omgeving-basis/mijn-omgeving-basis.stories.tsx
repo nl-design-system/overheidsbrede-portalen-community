@@ -126,7 +126,9 @@ const TemplatePage = ({
         </Sidenav>
       </Grid.Cell>
       <Grid.Cell span={8}>
-        <Paragraph>Content area</Paragraph>
+        <section style={{ backgroundColor: '#ffcc99', padding: '1rem', borderRadius: '8px' }}>
+          <Paragraph>Content area</Paragraph>
+        </section>
       </Grid.Cell>
     </Grid>
   </Layout>
