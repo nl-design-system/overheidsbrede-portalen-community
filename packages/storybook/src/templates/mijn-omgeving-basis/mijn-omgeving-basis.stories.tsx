@@ -64,7 +64,7 @@ const TemplatePage = ({
         Gemeente Voorbeeld
       </BreadcrumbNavLink>
     </BreadcrumbNav>
-    <Grid>
+    <Grid paddingTop={'x-large'}>
       <Grid.Cell span={4}>
         <Sidenav>
           <SidenavList>

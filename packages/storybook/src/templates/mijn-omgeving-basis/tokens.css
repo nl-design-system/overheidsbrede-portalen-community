@@ -5,6 +5,7 @@
   --ams-grid-wide-column-count: 12;
   --ams-grid-medium-column-count: 12;
   --ams-grid-column-count: 12;
+  --ams-grid-padding-block-xl: var(--voorbeeld-space-block-cat);
 
   /* Component spacing tokens that aren't set in voorbeeld-theme */
   --denhaag-sidenav-display: flex;
