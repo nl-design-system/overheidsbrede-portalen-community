@@ -29,7 +29,7 @@ import { Layout } from '../../components/Layout';
 import { PageHeaderLogo, VoorbeeldFooterLogo } from '../../components/Logo';
 
 const meta = {
-  title: 'Templates/Mijn Omgeving/Basis/Pagina',
+  title: 'Templates/Mijn Omgeving/Basis',
   id: 'mijn-omgeving-basis',
   parameters: {
     layout: 'fullscreen',
@@ -69,7 +69,7 @@ const TemplatePage = ({
         <Sidenav>
           <SidenavList>
             <SidenavItem>
-              <SidenavLink href="/#" current>
+              <SidenavLink href="/#">
                 <IconLayoutGrid />
                 Home
               </SidenavLink>
@@ -83,7 +83,7 @@ const TemplatePage = ({
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
-              <SidenavLink href="/#">
+              <SidenavLink href="/#" current>
                 <IconArchive />
                 Lopende zaken
               </SidenavLink>
