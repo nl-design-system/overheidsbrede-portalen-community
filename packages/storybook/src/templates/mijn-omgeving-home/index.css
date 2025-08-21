@@ -1,5 +1,6 @@
 .voorbeeld-theme {
   --utrecht-space-around: 1;
+  --utrecht-root-font-family: var(--voorbeeld-typography-font-family-secondary);
 
   /* Amsterdam component tokens */
   --ams-grid-wide-column-count: 12;
@@ -103,6 +104,7 @@
 }
 
 .denhaag-theme {
+  --utrecht-root-font-family: var(--denhaag-typography-sans-serif-alternate-font-family);
   --utrecht-space-around: 1;
   --utrecht-article-max-inline-size: 670px;
   --todo-page-header-content-max-inline-size: calc(var(--utrecht-article-max-inline-size) * 1.5);
