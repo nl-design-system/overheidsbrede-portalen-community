@@ -43,6 +43,7 @@ const meta = {
   parameters: {
     layout: 'fullscreen',
   },
+  tags: ['!dev'], // !!! This temporarily hides the story from the sidebar, we can readd it when we finish implementing the new profile UX !!!
 } satisfies Meta;
 
 export default meta;
