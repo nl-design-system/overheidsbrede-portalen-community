@@ -8,7 +8,7 @@ publiccodeYmlVersion: "0.4"
 # project bekend is bij de meeste mensen.
 name: Overheidsbrede Portalen
 # De url naar de source code.
-url: "https://gitlab.com/nl-design-system/overheidsbrede-portalen-community"
+url: "https://github.com/nl-design-system/overheidsbrede-portalen-community"
 
 # De url naar de productieomgeving van de software.
 landingURL: "https://nl-design-system.github.io/overheidsbrede-portalen-community/" # optioneel
