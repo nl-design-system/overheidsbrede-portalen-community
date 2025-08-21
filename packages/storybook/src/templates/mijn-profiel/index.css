@@ -58,13 +58,9 @@
   --todo-page-header-padding-inline-end: var(--voorbeeld-space-inline-mouse);
 
   /* Custom footer tokens */
-  --todo-page-footer-menu-link-color: var(--voorbeeld-color-white);
-  --todo-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
-  --todo-page-footer-heading-4-color: var(--voorbeeld-color-white);
-  --todo-page-footer-paragraph-color: var(--voorbeeld-color-white);
-  --todo-page-footer-link-color: var(--voorbeeld-color-white);
-  --todo-page-footer-link-hover-color: var(--voorbeeld-color-gray-100);
+
   --todo-page-footer-color: var(--voorbeeld-color-white);
+  --todo-page-footer-heading-color: var(--voorbeeld-color-white);
 }
 
 .denhaag-theme {
@@ -111,12 +107,7 @@
 
   /* DH page footer tokens */
   --ams-page-footer-spotlight-background-color: var(--denhaag-footer-background-color);
-  --todo-page-footer-menu-link-color: var(--denhaag-footer-color);
-  --todo-page-footer-menu-hover-color: var(--denhaag-footer-color);
-  --todo-page-footer-heading-4-color: var(--denhaag-link-group-dark-caption-color);
-  --todo-page-footer-paragraph-color: var(--denhaag-footer-color);
-  --todo-page-footer-link-color: var(--denhaag-link-group-dark-link-color);
-  --todo-page-footer-link-hover-color: var(--denhaag-link-group-dark-link-color);
+  --todo-page-footer-heading-color: var(--denhaag-link-group-dark-caption-color);
   --todo-page-footer-color: var(--denhaag-footer-color);
 
   /* TEMP VOORBEELD SCALE */
@@ -240,7 +231,7 @@
 
 .todo-page-footer__spotlight {
   --ams-page-footer-menu-hover-color: var(--todo-page-footer-menu-hover-color);
-  --utrecht-heading-color: var(--todo-page-footer-heading-4-color);
+  --utrecht-heading-4-color: var(--todo-page-footer-heading-color);
   --utrecht-heading-4-margin-block-end: var(--voorbeeld-space-block-beetle);
   --utrecht-paragraph-color: var(--todo-page-footer-color);
   --utrecht-link-color: var(--todo-page-footer-color);
