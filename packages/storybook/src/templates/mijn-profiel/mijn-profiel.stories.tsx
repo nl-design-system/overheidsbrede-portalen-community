@@ -234,7 +234,5 @@ export const Default: Story = {
 };
 
 export const DenHaagTheme: Story = {
-  render: () => (
-    <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} footerLogo={<Heading2>Gemeente Den Haag</Heading2>} />
-  ),
+  render: () => <TemplatePage logo={<DenHaagLogo />} theme={'denhaag-theme'} />,
 };
