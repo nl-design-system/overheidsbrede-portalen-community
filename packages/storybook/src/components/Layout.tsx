@@ -19,7 +19,7 @@ interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> 
 
 export const Layout = ({ logo, children, className, footerLogo, ...props }: LayoutProps) => {
   return (
-    <Root className={`utrecht-document ${className}`} {...props}>
+    <Root className={className} {...props}>
       <PageHeader className="voorbeeld-page-header">
         <div className="todo-page-header__content">{logo}</div>
       </PageHeader>
