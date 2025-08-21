@@ -93,6 +93,23 @@
   --utrecht-page-content-padding-inline-start: 0;
   --utrecht-page-content-padding-inline-end: 0;
 
+  /* Amsterdam component tokens */
+  --ams-grid-wide-column-count: 12;
+  --ams-grid-medium-column-count: 6;
+  --ams-grid-narrow-column-count: 3;
+  --ams-grid-padding-inline: var(--voorbeeld-space-row-rat);
+  --ams-grid-padding-block-xl: var(--voorbeeld-space-row-cat);
+  --ams-grid-medium-padding-inline: var(--voorbeeld-space-row-cat);
+  --ams-grid-row-gap-xl: var(--voorbeeld-space-row-rat);
+  --ams-grid-column-gap: var(--voorbeeld-space-row-rat);
+
+  /* Amsterdam Page Footer tokens */
+  --ams-page-footer-menu-column-gap: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-padding-block: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-padding-inline: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-medium-padding-inline: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-wide-padding-inline: var(--voorbeeld-space-block-mouse);
+
   /* DH page footer tokens */
   --ams-page-footer-spotlight-background-color: var(--denhaag-footer-background-color);
   --todo-page-footer-menu-link-color: var(--denhaag-footer-color);
@@ -102,17 +119,6 @@
   --todo-page-footer-link-color: var(--denhaag-link-group-dark-link-color);
   --todo-page-footer-link-hover-color: var(--denhaag-link-group-dark-link-color);
   --todo-page-footer-color: var(--denhaag-footer-color);
-
-  /* Amsterdam Page Footer tokens */
-
-  /* --ams-page-footer-menu-column-gap: var();
-  --ams-page-footer-menu-padding-block: var();
-  --ams-page-footer-menu-padding-inline: var();
-  --ams-page-footer-menu-medium-padding-inline: var();
-  --ams-page-footer-menu-wide-padding-inline: var();
-  --ams-page-footer-menu-link-color: var();
-  --ams-page-footer-menu-hover-color: var();
-  --ams-page-footer-spotlight-background-color: var(); */
 
   /* TEMP VOORBEELD SCALE */
   --voorbeeld-space-relation-onbemind: var(--voorbeeld-space-row-horse);
@@ -237,9 +243,6 @@
   --ams-page-footer-menu-link-color: var(--todo-page-footer-menu-link-color);
   --ams-page-footer-menu-hover-color: var(--todo-page-footer-menu-hover-color);
   --utrecht-heading-4-color: var(--todo-page-footer-heading-4-color);
-  --utrecht-heading-4-padding-start: 2em;
-
-  /* check: als deze token bestaat anders toch selector apart */
   --utrecht-heading-4-margin-block-end: var(--voorbeeld-space-block-beetle);
   --utrecht-paragraph-color: var(--todo-page-footer-paragraph-color);
   --utrecht-link-color: var(--todo-page-footer-link-color);

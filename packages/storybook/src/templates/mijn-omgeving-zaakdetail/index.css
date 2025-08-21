@@ -56,6 +56,15 @@
   --todo-page-header-padding-inline-start: var(--voorbeeld-space-inline-mouse);
   --todo-page-header-padding-inline-end: var(--voorbeeld-space-inline-mouse);
 
+  /* Custom footer tokens */
+  --todo-page-footer-menu-link-color: var(--voorbeeld-color-white);
+  --todo-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
+  --todo-page-footer-heading-4-color: var(--voorbeeld-color-white);
+  --todo-page-footer-paragraph-color: var(--voorbeeld-color-white);
+  --todo-page-footer-link-color: var(--voorbeeld-color-white);
+  --todo-page-footer-link-hover-color: var(--voorbeeld-color-gray-100);
+  --todo-page-footer-color: var(--voorbeeld-color-white);
+
   /* Testing new Den haag components */
 
   --denhaag-action-warning-icon-width: var(--voorbeeld-icon-functional-size);
@@ -1618,6 +1627,33 @@
   --utrecht-page-content-padding-inline-start: 0;
   --utrecht-page-content-padding-inline-end: 0;
 
+  /* Amsterdam component tokens */
+  --ams-grid-wide-column-count: 12;
+  --ams-grid-medium-column-count: 6;
+  --ams-grid-narrow-column-count: 3;
+  --ams-grid-padding-inline: var(--voorbeeld-space-row-rat);
+  --ams-grid-padding-block-xl: var(--voorbeeld-space-row-cat);
+  --ams-grid-medium-padding-inline: var(--voorbeeld-space-row-cat);
+  --ams-grid-row-gap-xl: var(--voorbeeld-space-row-rat);
+  --ams-grid-column-gap: var(--voorbeeld-space-row-rat);
+
+  /* Amsterdam Page Footer tokens */
+  --ams-page-footer-menu-column-gap: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-padding-block: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-padding-inline: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-medium-padding-inline: var(--voorbeeld-space-block-mouse);
+  --ams-page-footer-menu-wide-padding-inline: var(--voorbeeld-space-block-mouse);
+
+  /* DH page footer tokens */
+  --ams-page-footer-spotlight-background-color: var(--denhaag-footer-background-color);
+  --todo-page-footer-menu-link-color: var(--denhaag-footer-color);
+  --todo-page-footer-menu-hover-color: var(--denhaag-footer-color);
+  --todo-page-footer-heading-4-color: var(--denhaag-link-group-dark-caption-color);
+  --todo-page-footer-paragraph-color: var(--denhaag-footer-color);
+  --todo-page-footer-link-color: var(--denhaag-link-group-dark-link-color);
+  --todo-page-footer-link-hover-color: var(--denhaag-link-group-dark-link-color);
+  --todo-page-footer-color: var(--denhaag-footer-color);
+
   /* TEMP VOORBEELD SCALE */
   --voorbeeld-space-relation-onbemind: var(--voorbeeld-space-row-horse);
   --voorbeeld-space-relation-onbekenden: var(--voorbeeld-space-row-pig);
@@ -1739,27 +1775,18 @@
 }
 
 .todo-page-footer__spotlight {
-  --ams-page-footer-menu-link-color: var(--voorbeeld-color-white);
-  --ams-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
-  --utrecht-heading-2-color: var(--voorbeeld-color-white);
-  --utrecht-heading-2-padding-start: 2em;
-  --utrecht-paragraph-color: var(--voorbeeld-color-white);
-  --utrecht-link-color: var(--voorbeeld-color-white);
-  --utrecht-link-hover-color: var(--voorbeeld-color-gray-100);
+  --ams-page-footer-menu-link-color: var(--todo-page-footer-menu-link-color);
+  --ams-page-footer-menu-hover-color: var(--todo-page-footer-menu-hover-color);
+  --utrecht-heading-4-color: var(--todo-page-footer-heading-4-color);
+  --utrecht-heading-4-margin-block-end: var(--voorbeeld-space-block-beetle);
+  --utrecht-paragraph-color: var(--todo-page-footer-paragraph-color);
+  --utrecht-link-color: var(--todo-page-footer-link-color);
+  --utrecht-link-hover-color: var(--todo-page-footer-link-hover-color);
 
   background-color: var(--ams-page-footer-spotlight-background-color);
-  color: var(--voorbeeld-color-white);
+  color: var(--todo-page-footer-color);
   padding-block-end: 1em;
   padding-block-start: 2em;
-}
-
-.todo-page-footer__spotlight * {
-  color: var(--voorbeeld-color-white);
-}
-
-.todo-page-footer__spotlight .utrecht-heading-4 {
-  color: var(--voorbeeld-color-white);
-  margin-block-end: var(--voorbeeld-space-block-beetle);
 }
 
 .todo-address {
