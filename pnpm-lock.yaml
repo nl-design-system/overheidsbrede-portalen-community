@@ -183,12 +183,6 @@ importers:
       '@utrecht/root-react':
         specifier: 1.0.5
         version: 1.0.5(@babel/runtime@7.27.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@vng.nl/assets':
-        specifier: workspace:*
-        version: link:../../proprietary/assets
-      '@vng.nl/design-tokens':
-        specifier: workspace:*
-        version: link:../../proprietary/design-tokens
       '@whitespace/storybook-addon-html':
         specifier: 6.1.1
         version: 6.1.1(prettier@3.3.3)(react-syntax-highlighter@15.5.0(react@18.3.1))
@@ -213,23 +207,6 @@ importers:
       vite:
         specifier: 5.4.11
         version: 5.4.11(@types/node@22.5.2)
-
-  proprietary/assets: {}
-
-  proprietary/design-tokens:
-    devDependencies:
-      chokidar-cli:
-        specifier: 3.0.0
-        version: 3.0.0
-      npm-run-all:
-        specifier: 4.1.5
-        version: 4.1.5
-      rimraf:
-        specifier: 6.0.1
-        version: 6.0.1
-      style-dictionary:
-        specifier: 3.9.2
-        version: 3.9.2
 
 packages:
 
