@@ -17,7 +17,6 @@
   --ams-page-footer-menu-padding-inline: var(--voorbeeld-space-block-mouse);
   --ams-page-footer-menu-medium-padding-inline: var(--voorbeeld-space-block-mouse);
   --ams-page-footer-menu-wide-padding-inline: var(--voorbeeld-space-block-mouse);
-  --ams-page-footer-menu-link-color: var(--voorbeeld-color-white);
   --ams-page-footer-menu-hover-color: var(--voorbeeld-color-gray-100);
   --ams-page-footer-spotlight-background-color: var(--voorbeeld-color-violet-700);
 
@@ -285,13 +284,12 @@
 }
 
 .todo-page-footer__spotlight {
-  --ams-page-footer-menu-link-color: var(--todo-page-footer-menu-link-color);
   --ams-page-footer-menu-hover-color: var(--todo-page-footer-menu-hover-color);
-  --utrecht-heading-4-color: var(--todo-page-footer-heading-4-color);
+  --utrecht-heading-4-color: var(--todo-page-footer-heading-color);
   --utrecht-heading-4-margin-block-end: var(--voorbeeld-space-block-beetle);
-  --utrecht-paragraph-color: var(--todo-page-footer-paragraph-color);
-  --utrecht-link-color: var(--todo-page-footer-link-color);
-  --utrecht-link-hover-color: var(--todo-page-footer-link-hover-color);
+  --utrecht-paragraph-color: var(--todo-page-footer-color);
+  --utrecht-link-color: var(--todo-page-footer-color);
+  --utrecht-link-hover-color: var(--todo-page-footer-color);
 
   background-color: var(--ams-page-footer-spotlight-background-color);
   color: var(--todo-page-footer-color);
