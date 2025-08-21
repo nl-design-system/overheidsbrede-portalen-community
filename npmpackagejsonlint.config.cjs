@@ -8,12 +8,4 @@ module.exports = {
     'valid-values-license': ['error', ['EUPL-1.2']],
     'valid-values-name-scope': ['error', ['@vng.nl']],
   },
-  overrides: [
-    {
-      patterns: ['proprietary/**/package.json'],
-      rules: {
-        'valid-values-license': ['error', ['SEE LICENSE IN LICENSE.md']],
-      },
-    },
-  ],
 };
