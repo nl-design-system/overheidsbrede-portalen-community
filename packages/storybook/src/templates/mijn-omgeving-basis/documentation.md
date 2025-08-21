@@ -21,13 +21,17 @@ Voor de basis indeling worden de volgende componenten gebruikt:
 
 ### Pagina layout
 
-- [Amsterdam Grid](https://designsystem.amsterdam/?path=/docs/components-layout-grid--docs)
-- [Amsterdam Header](https://designsystem.amsterdam/?path=/docs/components-containers-page-header--docs)
-- [Amsterdam Footer](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs)
+| Component                                             | Gebruikte implementatie                                                                                |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Grid                                                  | [Amsterdam Grid](https://designsystem.amsterdam/?path=/docs/components-layout-grid--docs)              |
+| [Page Header](https://nldesignsystem.nl/page-header/) | [Amsterdam Header](https://designsystem.amsterdam/?path=/docs/components-containers-page-header--docs) |
+| [Page Footer](https://nldesignsystem.nl/page-footer/) | [Amsterdam Footer](https://designsystem.amsterdam/?path=/docs/components-containers-page-footer--docs) |
 
 ### Navigatie
 
-- [Den Haag Sidenav](https://nl-design-system.github.io/denhaag/?path=/docs/react-sidenavigation--docs)
-- [Utrecht Breadcrumb Navigation](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-breadcrumb-nav--docs)
-- [Utrecht Link](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-link--docs)
-- [Utrecht Link List](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-link-list--docs)
+| Component                                                                 | Gebruikte implementatie                                                                                                            |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [Side Navigation](https://nldesignsystem.nl/side-navigation/)             | [Den Haag Sidenav](https://nl-design-system.github.io/denhaag/?path=/docs/react-sidenavigation--docs)                              |
+| [Breadcrumb Navigation](https://nldesignsystem.nl/breadcrumb-navigation/) | [Utrecht Breadcrumb Navigation](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-breadcrumb-nav--docs) |
+| [Link](https://nldesignsystem.nl/link/)                                   | [Utrecht Link](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-link--docs)                            |
+| [Link List](https://nldesignsystem.nl/link-list/)                         | [Utrecht Link List](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/react_react-link-list--docs)                  |
