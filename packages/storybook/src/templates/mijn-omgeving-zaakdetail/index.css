@@ -1799,3 +1799,7 @@
   display: flex;
   flex-direction: row;
 }
+
+.todo-file-component {
+  word-break: initial;
+}

@@ -145,7 +145,13 @@ const TemplatePage = ({
         <Heading2>Status</Heading2>
         {timeline}
         <Heading2>Documenten</Heading2>
-        <File name={'antwoord-formulier-deelname-onderzoek'} href={''} size={'658kb'} lastUpdated={'12-12-2024'} />
+        <File
+          className={'todo-file-component'}
+          name={'antwoord-formulier-deelname-onderzoek'}
+          href={''}
+          size={'658kb'}
+          lastUpdated={'12-12-2024'}
+        />
       </div>
     </div>
   </Layout>
