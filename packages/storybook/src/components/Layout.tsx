@@ -18,6 +18,8 @@ interface LayoutProps extends PropsWithChildren<HTMLAttributes<HTMLDivElement>> 
 }
 
 export const Layout = ({ logo, children, className, footerLogo, ...props }: LayoutProps) => {
+  const footerColumnCellSpan = footerLogo ? 3 : 4;
+
   return (
     <Root className={className} {...props}>
       <PageHeader className="voorbeeld-page-header">
@@ -31,12 +33,12 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
         <PageFooter.Spotlight className="todo-page-footer__spotlight">
           <Grid className="todo-page-footer__grid">
             {footerLogo && (
-              <Grid.Cell span={3}>
+              <Grid.Cell span={footerColumnCellSpan}>
                 <div>{footerLogo}</div>
               </Grid.Cell>
             )}
 
-            <Grid.Cell span={footerLogo ? 3 : 4}>
+            <Grid.Cell span={footerColumnCellSpan}>
               <Heading level={2} appearance="utrecht-heading-4">
                 Contact
               </Heading>
@@ -50,7 +52,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               </address>
             </Grid.Cell>
 
-            <Grid.Cell span={footerLogo ? 3 : 4}>
+            <Grid.Cell span={footerColumnCellSpan}>
               <Heading level={2} appearance="utrecht-heading-4">
                 Meer weten
               </Heading>
@@ -62,7 +64,7 @@ export const Layout = ({ logo, children, className, footerLogo, ...props }: Layo
               </LinkList>
             </Grid.Cell>
 
-            <Grid.Cell span={footerLogo ? 3 : 4}>
+            <Grid.Cell span={footerColumnCellSpan}>
               <Heading level={2} appearance="utrecht-heading-4">
                 Over deze site
               </Heading>
